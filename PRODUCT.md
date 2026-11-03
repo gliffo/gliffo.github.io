@@ -24,3 +24,7 @@ La home conserva il laboratorio vettoriale e i marchi originali, reinterpretati 
 ## Email di benvenuto Gmail — preparata, non attivata
 
 L’utente ha autorizzato l’automazione gratuita Gmail. Il progetto Apps Script in automation/gmail usa le notifiche del modulo Formspree e invia il testo approvato con download e feedback. Il proprietario deve creare/autorizzare il progetto Google e attivare il timer. Codice verificato con servizi simulati; nessuna email reale inviata o automazione attivata qui. La notifica scatta all’iscrizione, non alla verifica di download effettivo. Nessun nuovo abbonamento o servizio è stato attivato.
+
+## Chiarezza della landing
+
+Priorità richiesta dall’utente: far capire subito che Gliffo è per Adobe Illustrator, riduce i passaggi ripetitivi e si può provare gratuitamente. Hero Meno clic. Più tempo., prima riga 8strumenti perAdobeIllustrator, CTAprincipale ProvalaBeta. Testi dimezzati (773→386parole incluse le descrizioni espandibili), panoramiche ripetute unite, ogniappspiegata con una funzione concreta. Nessun tempo risparmiato quantificato o risultato inventato. Effetti glass/liquidi, moduloFormspree, markerGmail e risorseinstaller preservati. L’utente ha già confermato che invio e accesso ai download funzionano; l’automazioneGmail resta da attivare personalmente.

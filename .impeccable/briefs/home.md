@@ -25,3 +25,5 @@ Ultima revisione utente: più creatività con sfumature, glass e liquido. Implem
 Scelta successiva confermata: usare un altro servizio purché raccolga email. Implementato modulo HTML nativo/FormSubmit senza nuovo account, box bianco e pulsante nero affiancato. TallyBeta sostituito soltanto nella home; feedback invariato. L’attivazione email del provider richiede intervento del titolare; non è verificata.
 
 Correzione provider: FormSubmit ha restituito522all’utente; sostituito da Formspree mgaarvej fornito dall’autore. beta-email.js gestisce errori, timeout12s e retry, e apre i download solo per risposta ok=true. Test1440/390 con risposte intercettate e unitari completati; nessuna email reale inviata. Aspetto invariato.
+
+Ultima richiesta: meno testo e comprensione immediata di Illustrator, tempo risparmiato e provaBeta. Hero Meno clic. Più tempo., AdobeIllustrator nella prima riga descrittiva, CTAprimariaProvalaBeta; rimosse panoramiche ripetute, ogniappuna frase. Testo773→386parole. Aspetto glass/liquido e tutte le funzionalità preservati.

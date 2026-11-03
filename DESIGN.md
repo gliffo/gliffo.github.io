@@ -157,3 +157,7 @@ Richiesta utente: box bianco con email e pulsante nero affiancato. .email-shell:
 ## Stati di invio email
 
 Il box bianco e il pulsante nero restano invariati. Invio: pulsante disabilitato con testo Invio… e form aria-busy. Errore: messaggio14px/lineheight1.5 inchiostro#1B1D20 sotto il box, role=status/aria-livepolite; campo email conservato e pulsante riabilitato. Successo: messaggio breve seguito dai download soltanto dopo conferma del provider. Timeout12secondi e nessun trasferimento dell’email tramite URL o localStorage.
+
+## Gerarchia e copy semplificati
+
+Hero: Meno clic. Più tempo.; descrizione apre con 8strumenti perAdobeIllustrator, poi griglie/colori/presentazioni/export. ProvalaBeta è l’azione primaria verso#download, Scoprileapp la secondaria. Compatibilità e prova15giorni sono visibili subito. Le panoramiche duplicate e lo statement intermedio sono rimossi; resta un racconto con screenshot, tre vantaggi concreti e CTA. Ogni app ha titolo funzionale e una frase; le vecchie liste sono rimosse. FAQbrevi, invito feedback diretto. Logo, font, colori, glass e shader invariati.

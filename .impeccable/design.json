@@ -391,7 +391,7 @@
       "kind": "button",
       "refersTo": "button-primary",
       "description": "CTA principale home.",
-      "html": "<a class=\"ds-primary\" href=\"#download\">Scarica la Beta ↗</a>",
+      "html": "<a class=\"ds-primary\" href=\"#download\">Prova la Beta</a>",
       "css": ".ds-primary{display:inline-flex;background:var(--coral,#ea5c53);color:#1b1d20;padding:14px 20px;border-radius:6px;font:650 15px Bricolage,sans-serif;text-decoration:none;transition:background .2s,transform .2s}.ds-primary:hover{background:#f6776d;transform:translateY(-2px)}.ds-primary:focus-visible{outline:2px solid var(--coral,#ea5c53);outline-offset:7px}"
     },
     {
@@ -434,7 +434,7 @@
       "name": "Accesso Beta",
       "kind": "custom",
       "description": "Modulo nativo email obbligatoria, box bianco e pulsante nero; invio Formspree AJAX con stati loading/errore/retry. Download solo dopo conferma.",
-      "html": "<div class=\"ds-email\"><input type=\"email\" placeholder=\"nome@studio.it\" aria-label=\"Email\"><button type=\"button\">Accedi alla Beta</button></div>",
+      "html": "<div class=\"ds-email\"><input type=\"email\" placeholder=\"nome@studio.it\" aria-label=\"Email\"><button type=\"button\">Prova la Beta</button></div>",
       "css": ".ds-email{display:flex;gap:6px;padding:6px;background:#fff;border-radius:13px}.ds-email input{min-width:0;flex:1;border:0;padding:13px;color:#1b1d20}.ds-email button{background:#111;color:#fff;border:0;border-radius:8px;padding:14px 18px}"
     }
   ],
@@ -464,6 +464,7 @@
       "Don’t sostituire gli SVG originali con marchi ricreati."
     ],
     "liquidDirection": "Richiesta utente: sfumature, vetro e liquido. Home-night #15131E, highlight #FF8F83; canvas WebGL capped30fps/1.4M pixels, pausedoffscreen/hidden/reducedmotion, CSSfallback. Originallogos andTally preserved.",
-    "betaEmailCurrent": "ModuloHTML nativo Formspree mgaarvej fornito dal titolare. Boxwhite +blackbutton unchanged. AJAXconfirmedoktrue openspublicdownloads; network/HTTP/timeout12s/error preserves email and retry. Real submission not tested; feedbackTally unchanged."
+    "betaEmailCurrent": "ModuloHTML nativo Formspree mgaarvej fornito dal titolare. Boxwhite +blackbutton unchanged. AJAXconfirmedoktrue openspublicdownloads; network/HTTP/timeout12s/error preserves email and retry. Real submission not tested; feedbackTally unchanged.",
+    "landingClarity": "Meno clic. Più tempo. — 8strumenti perAdobeIllustrator. PrimaryProvalaBeta→#download. Copyhalved773→386words, singleoverview and shortappdisclosures. Liquidglassvisualsystem unchanged."
   }
 }

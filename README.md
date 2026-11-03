@@ -52,3 +52,7 @@ liquid.js disegna uno sfondo WebGL interattivo con fallback CSS, movimento ridot
 ## Benvenuto gratuito da Gmail
 
 Il pacchetto automation/gmail/Gliffo_Benvenuto_Gmail.zip contiene Code.gs, istruzioni e anteprima email. Google Apps Script va creato e autorizzato personalmente in gliffosuite@gmail.com. Non è ancora installato o attivo da questo ambiente e non sono state inviate email reali. Controllo ogni5minuti delle notifiche Formspree autenticate con markerGLIFFO_BETA_mgaarvej e destinatarioReply-To; solo nuove notifiche dopo attivazione, dedup perindirizzo, quoteGoogle e blocco invii incerti. Le istruzioni guidano verifica, prova esclusivamente alla casella proprietaria, attivazione e disattivazione. node tests/gmail-welcome.cjs usa mock Google e non verifica intestazioni reali o consegna. Il sito aggiunge soltanto un campo nascosto alla richiesta Formspree, senza cambiare il flusso già confermato funzionante dall’utente.
+
+## Landing più chiara
+
+La home mette in evidenza AdobeIllustrator, risparmiodipassaggi e provaBeta15giorni. Testi ridotti da773a386parole, una panoramica con screenshot e otto descrizioni brevi. CTAheader/hero/modulo ProvalaBeta; formendpoint/markerGmail e scriptinvariati. Verificati desktop1440/mobile390, nessunoverflow, linkancora, selezioneapp e rendererWebGL. Nessun invio reale eseguito per questa modifica; il funzionamento del flussoFormspree è già confermato dall’utente.
