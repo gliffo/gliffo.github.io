@@ -170,3 +170,10 @@ Dopo successo, messaggio inline role=status: controllare la posta, attesa indica
 ## Anteprime ad alta risoluzione
 
 Suite e otto app ricatturate a 4× dal payload firmato Beta 1.0.0, WebP senza perdita (circa 1,05 MB complessivi, caricati su richiesta). Nessun ingrandimento delle vecchie immagini. Pulsante Ingrandisci con dialogo, scorrimento interno per Scena, chiusura con Escape e ritorno del focus. Screenshot Suite diritto. Verificati tutti gli otto strumenti su desktop 1440 e mobile 390 a densità 2×, senza overflow orizzontale o errori JavaScript. Formspree, marker Gmail e feedback preservati. Interfacce HTML con dati dimostrativi, non esecuzione nativa Illustrator.
+
+
+## Header — scultura liquida
+
+Direzione approvata: amplificare il laboratorio vettoriale con una composizione sperimentale. Il marchio originale diventa una scultura cromata WebGL: alpha derivato dallo SVG originale, estrusione in shader, riflessi viola/corallo/menta e lente rifrangente che segue il puntatore con inerzia. Le otto targhe SVG restano link reali, rispondono a hover e focus e aprono la relativa app; il colore selezionato cambia i riflessi. Titolo HTML invariato, secondo rigo su una campitura acida inclinata (#D5FB58). Nessun effetto sul testo o sul modulo.
+
+Implementazione isolata in experiment.css e liquid.js: nessuna dipendenza esterna. Rendering limitato a circa 30fps e 1,2 milioni di pixel, pausa fuori schermo e a scheda nascosta. Movimento ridotto con frame statico; senza WebGL rimangono marchio SVG, sfumature CSS e tutti i link. Verificati Chromium desktop 1440, tablet 768 e mobile 390, texture WebGL, assenza di overflow, focus e navigazione delle app; fallback senza WebGL e movimento ridotto. Nessuna prova su dispositivo fisico dichiarata. Accesso Beta, screenshot 4×, feedback e installer preservati.
