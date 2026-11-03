@@ -12,7 +12,7 @@
  }
  var appButton=document.getElementById('preview-zoom'),suiteButton=document.getElementById('suite-zoom');
  if(appButton){appButton.addEventListener('click',function(){var current=document.getElementById('app-screenshot');open(appButton,current.currentSrc||current.src,current.alt);});}
- if(suiteButton){suiteButton.addEventListener('click',function(){var current=document.querySelector('.suite-window img');open(suiteButton,current.currentSrc||current.src,'Gliffo Suite — interfaccia della Beta');});}
+ if(suiteButton){suiteButton.addEventListener('click',function(){var current=document.querySelector('.suite-window img');open(suiteButton,current.currentSrc||current.src,'Presentazione del brand — esempio illustrativo');});}
  dialog.querySelector('[data-close-screenshot]').addEventListener('click',function(){dialog.close();});
  dialog.addEventListener('click',function(event){if(event.target!==dialog){return;}var r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom){dialog.close();}});
  dialog.addEventListener('close',function(){document.documentElement.style.overflow=previousOverflow;image.removeAttribute('src');if(lastTrigger){lastTrigger.focus({preventScroll:true});}});
