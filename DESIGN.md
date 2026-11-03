@@ -114,7 +114,7 @@ Feedback preservato: shell 880px con 824px interni, margine desktop 28px e mobil
 
 ## Elevation & Depth
 
-Prevalgono linee e campiture. Il laboratorio hero ora usa piani sovrapposti menta, corallo e viola derivati dagli accenti app, con ombre direzionali; sei sagome della g originale formano un’estrusione viola scura. Le targhe app hanno ombre più definite e inclinazioni individuali; la finestra Suite ruotata ha ombra più ampia. La preview app usa una superficie scura distinta. Il movimento del laboratorio è limitato al puntatore; focus e selezione funzionano anche da tastiera. Animazioni introduttive solo desktop con movimento consentito; reduced-motion disattiva animazioni, transizioni e inclinazioni.
+Prevalgono linee e campiture. Il laboratorio hero ora usa piani sovrapposti menta, corallo e viola derivati dagli accenti app, con ombre direzionali; sei sagome della g originale formano un’estrusione viola scura. Le targhe app hanno ombre più definite e inclinazioni individuali; la finestra Suite resta diritta per preservare la nitidezza dei testi. La preview app usa una superficie scura distinta. Il movimento del laboratorio è limitato al puntatore; focus e selezione funzionano anche da tastiera. Animazioni introduttive solo desktop con movimento consentito; reduced-motion disattiva animazioni, transizioni e inclinazioni.
 
 ## Shapes
 
@@ -165,3 +165,8 @@ Hero: Meno clic. Più tempo.; descrizione apre con 8strumenti perAdobeIllustrato
 ## Conferma iscrizione con link nella posta
 
 Dopo successo, messaggio inline role=status: controllare la posta, attesa indicativa5minuti, ricerca del benvenuto precedente per chi è già iscritto e Spam. Nessuna navigazione o URL download esposta dalla conferma. Il form si svuota e torna disponibile per correggere un eventuale indirizzo; campo email required e pulsante evitano invii doppi accidentali. Il box bianco/nero resta invariato.
+
+
+## Anteprime ad alta risoluzione
+
+Suite e otto app ricatturate a 4× dal payload firmato Beta 1.0.0, WebP senza perdita (circa 1,05 MB complessivi, caricati su richiesta). Nessun ingrandimento delle vecchie immagini. Pulsante Ingrandisci con dialogo, scorrimento interno per Scena, chiusura con Escape e ritorno del focus. Screenshot Suite diritto. Verificati tutti gli otto strumenti su desktop 1440 e mobile 390 a densità 2×, senza overflow orizzontale o errori JavaScript. Formspree, marker Gmail e feedback preservati. Interfacce HTML con dati dimostrativi, non esecuzione nativa Illustrator.

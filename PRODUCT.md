@@ -32,3 +32,8 @@ Priorità richiesta dall’utente: far capire subito che Gliffo è per Adobe Ill
 ## Accesso tramite email confermato dall’utente
 
 L’utente ha confermato che il timer Gmail è attivo e che l’email di benvenuto arriva. La consegna del link avviene ora tramite quell’email, dopo la richiesta Formspree; il sito non apre direttamente i download. Il campo viene svuotato dopo conferma. I contatti già accolti vengono invitati a recuperare il precedente benvenuto, senza promettere un reinvio che lo script anti-duplicati non esegue. Link statici condivisibili: nessuna autenticazione del download dichiarata.
+
+
+## Anteprime ad alta risoluzione
+
+Suite e otto app ricatturate a 4× dal payload firmato Beta 1.0.0, WebP senza perdita (circa 1,05 MB complessivi, caricati su richiesta). Nessun ingrandimento delle vecchie immagini. Pulsante Ingrandisci con dialogo, scorrimento interno per Scena, chiusura con Escape e ritorno del focus. Screenshot Suite diritto. Verificati tutti gli otto strumenti su desktop 1440 e mobile 390 a densità 2×, senza overflow orizzontale o errori JavaScript. Formspree, marker Gmail e feedback preservati. Interfacce HTML con dati dimostrativi, non esecuzione nativa Illustrator.

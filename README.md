@@ -60,3 +60,8 @@ La home mette in evidenza AdobeIllustrator, risparmiodipassaggi e provaBeta15gio
 ## Consegna del link via email
 
 L’utente ha confermato di aver attivato e verificato l’automazione Gmail. Per sua richiesta, dopo l’iscrizione il sito mostra Controllala tuaemail e non apre più i download. Il modulo viene svuotato per evitare un secondo invio accidentale; resta possibile correggere l’indirizzo con una nuova richiesta. Chi si è già iscritto deve cercare il precedente benvenuto, perché lo script Gmail evita duplicati. Invio indicativo entro circa5minuti; controllare Spam. Endpoint Formspree e marker invariati: nessuna modifica allo script Google è richiesta. Le URL download restano pubbliche e condivisibili, quindi il flusso non equivale a un’area riservata autenticata.
+
+
+## Anteprime ad alta risoluzione
+
+Suite e otto app ricatturate a 4× dal payload firmato Beta 1.0.0, WebP senza perdita (circa 1,05 MB complessivi, caricati su richiesta). Nessun ingrandimento delle vecchie immagini. Pulsante Ingrandisci con dialogo, scorrimento interno per Scena, chiusura con Escape e ritorno del focus. Screenshot Suite diritto. Verificati tutti gli otto strumenti su desktop 1440 e mobile 390 a densità 2×, senza overflow orizzontale o errori JavaScript. Formspree, marker Gmail e feedback preservati. Interfacce HTML con dati dimostrativi, non esecuzione nativa Illustrator.
