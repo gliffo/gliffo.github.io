@@ -10,16 +10,13 @@ Gli installer Mac DMG e Windows EXE sono disponibili in `downloads/`, con URL e 
 
 ## Accesso Beta corrente
 
-La home usa un modulo HTML nativo: email obbligatoria in un box bianco e pulsante nero affiancato, con invio POST a FormSubmit verso gliffosuite@gmail.com. L’utente ha autorizzato un servizio diverso da Tally per raccogliere soltanto le email. Il provider richiede un’attivazione da parte del titolare della casella dopo il primo invio; non è stata inviata una prova reale da questo ambiente e l’attivazione non è confermata.
+La home usa un modulo HTML nativo: email obbligatoria in un box bianco e pulsante nero affiancato. Il modulo è collegato all’endpoint Formspree https://formspree.io/f/mgaarvej fornito dall’utente. FormSubmit è stato sostituito dopo un errore HTTP522 riscontrato dal titolare. Non servono più le precedenti istruzioni di attivazione FormSubmit.
 
-Dopo un invio gestito correttamente dal provider, il parametro _next porta alla pagina pubblica /beta/download/, che contiene gli stessi installer Mac/Windows ed è marcata noindex. Il sito non conserva email in localStorage o parametri URL. Il provider gestisce invio, controlli antispam e reindirizzamento; il sito non mostra successi simulati. Questo è un percorso di registrazione, non autenticazione dei download pubblici.
+beta-email.js invia via AJAX, mostra stato in corso e gestisce erroriHTTP/rete/risposta/timeout12secondi senza lasciare il sito. Conserva l’email nel campo e permette retry. Solo una conferma JSON ok=true del provider apre /beta/download/. Nessuna email viene memorizzata in localStorage o inserita negli URL. I download restano pubblici: è registrazione, non autenticazione.
 
-Il feedback resta sul modulo Tally jeZYO9. Il vecchio modulo Beta Tally 2jXzv9 non è più incorporato nella home; non viene eliminato o alterato dall’account dell’utente.
+Il piano gratuito Formspree verificato consente50invii/mese. I test browser e unitari usano risposte provider simulate/intercettate: ricezione reale nel nuovo account ancora da confermare dall’utente. Il feedback resta su Tally jeZYO9; i vecchi moduli Beta non sono più incorporati nella home.
 
 ## Direzione visiva richiesta dall’utente
 
-La home conserva il laboratorio vettoriale e i marchi originali, reinterpretati con sfumature colorate, sfondo liquido interattivo WebGL e superfici in vetro. La richiesta esplicita sostituisce il precedente trattamento a piani piatti. Percorso Tally, raccolta email e installer restano invariati.
+La home conserva il laboratorio vettoriale e i marchi originali, reinterpretati con sfumature colorate, sfondo liquido interattivo WebGL e superfici in vetro. La richiesta esplicita sostituisce il precedente trattamento a piani piatti. Feedback Tally e installer restano separati; la raccolta Beta usa ora Formspree.
 
-## Errore provider e sostituzione in preparazione
-
-L’utente ha riscontrato HTTP522 su FormSubmit. Ora beta-email.js gestisce l’invio nel sito: stato in corso, timeout12s, erroriHTTP/rete/JSON/attivazione, valore email preservato e retry. Solo conferma esplicita del provider apre i download. Nessun invio reale verificato. Formspree è supportato dal codice; il vero endpoint dell’account dell’autore è stato richiesto e non è ancora disponibile. Il form continua temporaneamente a puntare a FormSubmit: la gestione errori non ripristina il servizio remoto.

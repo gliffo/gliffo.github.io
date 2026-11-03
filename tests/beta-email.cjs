@@ -1,6 +1,6 @@
 const vm=require('node:vm'),fs=require('node:fs'),assert=require('node:assert/strict');
 const source=fs.readFileSync('beta-email.js','utf8');
-function setup({reply={ok:true,status:200,json:async()=>({success:'true'})},failure,action='https://formsubmit.co/gliffosuite@gmail.com',fetcher}={}){
+function setup({reply={ok:true,status:200,json:async()=>({ok:true})},failure,action='https://formspree.io/f/mgaarvej',fetcher}={}){
  let submit,requests=[],navigation=[],timers=[],cleared=[];const button={innerHTML:'Accedi alla Beta',disabled:false,textContent:''},status={textContent:''},honey={value:''};
  const form={action,email:'qa@example.invalid',valid:true,attrs:{},querySelector:s=>s.startsWith('button')?button:honey,reportValidity(){return this.valid},setAttribute(k,v){this.attrs[k]=v},removeAttribute(k){delete this.attrs[k]},addEventListener(n,f){assert.equal(n,'submit');submit=f}};
  class FD{constructor(f){this.entries=[['email',f.email],['_honey',honey.value]]}forEach(fn){this.entries.forEach(([k,v])=>fn(v,k))}}
@@ -13,7 +13,7 @@ function setup({reply={ok:true,status:200,json:async()=>({success:'true'})},fail
  for(const reply of [{ok:false,status:522},{ok:false,status:429},{ok:true,status:200,json:async()=>({success:false})},{ok:true,status:200,json:async()=>({success:'false'})},{ok:true,status:200,json:async()=>{throw Error('HTML error page')}}]){const s=setup({reply});await s.submit();assert.deepEqual(s.navigation,[]);assert.equal(s.button.disabled,false);assert(s.status.textContent.length>15);assert.equal(s.form.email,'qa@example.invalid');assert.equal(s.form.attrs['aria-busy'],undefined);assert(s.cleared.length);}
  let s=setup({failure:true});await s.submit();assert.deepEqual(s.navigation,[]);assert.equal(s.button.disabled,false);
  s=setup();s.form.valid=false;await s.submit();assert.equal(s.requests.length,0);
- s=setup();await s.submit();assert.deepEqual(s.navigation,['/beta/download/']);assert.equal(s.requests[0][0],'https://formsubmit.co/ajax/gliffosuite@gmail.com');assert.equal(JSON.parse(s.requests[0][1].body).email,'qa@example.invalid');
+ s=setup();await s.submit();assert.deepEqual(s.navigation,['/beta/download/']);assert.equal(s.requests[0][0],'https://formspree.io/f/mgaarvej');assert.equal(s.requests[0][1].body.entries[0][1],'qa@example.invalid');
  s=setup({action:'https://formspree.io/f/testendpoint',reply:{ok:true,status:200,json:async()=>({ok:true,next:'https://other.example/'})}});await s.submit();assert.deepEqual(s.navigation,['/beta/download/']);assert.equal(s.requests[0][1].headers.Accept,'application/json');
  s=setup({action:'https://formspree.io/f/testendpoint',reply:{ok:true,status:200,json:async()=>({ok:false,errors:[{message:'Rejected'}]})}});await s.submit();assert.deepEqual(s.navigation,[]);
  s=setup({fetcher:(_,options)=>new Promise((_,reject)=>options.signal.addEventListener('abort',()=>reject(Error('timeout'))))});const pending=s.submit();await s.submit();assert.equal(s.requests.length,1);s.timers[0]();await pending;assert.deepEqual(s.navigation,[]);assert.equal(s.button.disabled,false);

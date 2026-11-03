@@ -152,7 +152,7 @@ WebGL è limitato a circa 30 fotogrammi al secondo e 1,4 milioni di pixel. Il re
 
 ## Modulo email nativo
 
-Richiesta utente: box bianco con email e pulsante nero affiancato. .email-shell: #FFFFFF, raggio13px, padding6px, gap6px, ombra0 12px 28px #501D1D18. Input trasparente, testo#1B1D20, placeholder#62656B. Pulsante#111111/testo#FFFFFF, raggio8px e padding14px 18px, sempre affiancato; sotto450px riduce padding e label per restare su una riga. Etichetta email reale, input typeemail obbligatorio e autocompleteemail. Focus scuro visibile sul gruppo bianco. La validazione è quella nativa del browser; il POST e il ritorno ai download sono gestiti da FormSubmit. Non viene più caricato Tally nella sezione Beta. Nessun successo finto nel frontend e nessuna chiave segreta. Il feedback continua a usare il suo Tally originale.
+Richiesta utente: box bianco con email e pulsante nero affiancato. .email-shell: #FFFFFF, raggio13px, padding6px, gap6px, ombra0 12px 28px #501D1D18. Input trasparente, testo#1B1D20, placeholder#62656B. Pulsante#111111/testo#FFFFFF, raggio8px e padding14px 18px, sempre affiancato; sotto450px riduce padding e label per restare su una riga. Etichetta email reale, input typeemail obbligatorio e autocompleteemail. Focus scuro visibile sul gruppo bianco. La validazione è quella nativa del browser; il POST e il ritorno ai download sono gestiti da Formspree. Non viene più caricato Tally nella sezione Beta. Nessun successo finto nel frontend e nessuna chiave segreta. Il feedback continua a usare il suo Tally originale.
 
 ## Stati di invio email
 

@@ -35,32 +35,16 @@ Documentazione ufficiale: https://developers.tally.so/widgets/embeds e https://t
 
 `node tests/embed.cjs` copre l’integrazione Tally con SDK simulato: opzioni, altezze 2600/900px, scroll e fallback; non verifica invii o rendering live. I limiti browser/proxy del precedente lavoro Tally non annullano la conferma d’uso fornita dall’utente. Per la nuova home sono disponibili catture HTML desktop 1440 e mobile 390 nella review locale; la revisione finale ha confermato risolti tutti e tre i rilievi e ha dato esito favorevole alla pubblicazione nell’ambito della lista di correzioni. Questo esito non estende le verifiche all’esecuzione nativa degli installer. Verificare su OS reali gli installer resta un controllo distinto dalle prove statiche e dal payload firmato.
 
-## Accesso Beta e profondità header
+## Accesso Beta corrente: Formspree
 
-La home presenta ora l’accesso Beta tramite il nuovo modulo Tally `2jXzv9` (https://tally.so/r/2jXzv9), distinto dal feedback `jeZYO9`. I link installer sono nella pagina pubblica `/beta/download/`, marcata noindex/nofollow: la registrazione è un percorso UI su GitHub Pages, non autenticazione o protezione dei file.
+Il box email HTML nativo punta a https://formspree.io/f/mgaarvej, endpoint fornito dall’autore. Il layout bianco/nero resta nel sito; solo il feedback usa ancora Tally jeZYO9. FormSubmit è stato ritirato dopo HTTP522: non è più necessaria la sua attivazione.
 
-`beta-access.js` carica lo SDK ufficiale come miglioramento di un iframe con src nativo, titolo, sfondo trasparente e altezza dinamica. Il listener verifica origine https://tally.so, finestra sorgente, formId 2jXzv9 e id risposta non vuoto prima della navigazione. Non memorizza né inoltra email. Il link diretto resta disponibile senza SDK. `scripts/configure-beta.py` aggiorna il form URL; `tests/beta-access.cjs` simula gli eventi provider e non costituisce prova di invio live.
+beta-email.js invia con Accept application/json; solo una conferma ok=true apre /beta/download/. Il redirect è fisso e non trasporta email. ErroriHTTP522/429, rete,JSONerrato, rifiuti e timeout12s lasciano il visitatore nel sito, conservano il campo e permettono retry. Nessuna email in localStorage e nessun successo simulato nel codice di produzione.
 
-Il provider non è renderizzabile da questo ambiente: campo email effettivo, obbligatorietà e invio reale del nuovo modulo non sono verificati. È stato chiesto all’utente di impostare Email obbligatoria e redirect di completamento del modulo standalone a https://gliffo.github.io/beta/download/; conferma ancora in attesa. Nessuna verifica end-to-end completa è dichiarata.
+Per cambiare endpoint usare scripts/configure-formspree.py con il nuovo URL reale dell’account. Non usare scripts/configure-beta.py o beta-access.js: appartengono alla precedente integrazione Tally Beta, non caricata dalla home. Il piano gratuito Formspree verificato consente50invii/mese; quota e notifiche si gestiscono nell’account dell’autore. Documentazione: https://help.formspree.io/articles/building-your-form/submit-forms-with-javascript-ajax e https://formspree.io/plans/.
 
-La revisione finale approva il raffinamento visivo locale dell’header: piani colorati, g originale estrusa tramite maschere e targhe app, con movimento ridotto rispettato. Richiede una nuova cattura della sezione Beta quando Tally sarà raggiungibile. Questa approvazione non copre il flusso email completo. Feedback e styles.css restano separati e invariati; la precedente conferma d’uso del feedback non verifica il nuovo form Beta.
+Verifica: node tests/beta-email.cjs copre522,rete,timeout,429,HTML/JSONerrato,falsoconferme,doppiinvii e successoconfermato. Browserdesktop1440/mobile390 con tutte le richieste provider intercettate: email preservata dopo522, retrye redirectsolo dopo confermasimulata. Nessun invio reale eseguito. Prima dei tester l’autore deve inviare una prova dal sito, verificarla in Formspree e controllare l’apertura dei download.
 
 ## Effetto liquido della home
 
-`liquid.js` disegna uno sfondo WebGL interattivo, con fallback CSS e supporto al movimento ridotto. Nessuna libreria o richiesta esterna per l’effetto. I rendering desktop1440/mobile390 sono stati controllati in Chromium con WebGL software; il modulo Tally non è modificato e il suo invio reale resta da verificare dal browser dell’autore.
-
-## Accesso Beta: stato attuale (modulo nativo)
-
-Il modulo Beta Tally è sostituito dal form HTML in index.html. Il modulo POST punta a https://formsubmit.co/gliffosuite@gmail.com, con email obbligatoria, oggetto dedicato e _next=https://gliffo.github.io/beta/download/. Nessun JS è necessario per inviare. L’antispam del provider resta attivo. Non eseguire scripts/configure-beta.py: è il precedente configuratore Tally, conservato come storico.
-
-Attivazione necessaria: aprire il sito pubblico, inviare una volta la propria email, aprire nella casella gliffosuite@gmail.com il messaggio FormSubmit e confermare Activate Form. Ripetere un invio per verificare ricezione e ritorno ai download. La prima conferma e l’invio reale non sono stati eseguiti qui. I test browser intercettano il POST, verificano campi e validazione e restituiscono una risposta simulata; non inviano email.
-
-Documentazione del servizio: https://formsubmit.co/documentation e https://formsubmit.co/help. Feedback Tally separato e installer invariati.
-
-## Guasto FormSubmit e migrazione Formspree
-
-Il titolare ha riscontrato HTTP522. beta-email.js ora intercetta l’invio e non porta il visitatore alla pagina di errore del provider; mostra errore/retry e conserva il campo email. Il guasto remoto non è risolto da questo codice. Timeout12s; nessun accesso ai download prima della conferma esplicita.
-
-Per collegare Formspree dopo aver creato il modulo nell’account del titolare: `python3 scripts/configure-formspree.py https://formspree.io/f/ENDPOINT_REALE`. Il comando modifica l’action e rimuove opzioni specifiche del vecchio provider, senza inviare messaggi o pubblicare. Il redirect dopo successo AJAX resta /beta/download/. Il piano gratuito Formspree verificato consente50invii/mese. Endpoint e ricezione reale ancora da verificare.
-
-`node tests/beta-email.cjs` verifica522, rete, timeout, falso successo booleano/stringa,429,JSONerrato,doppiinvii e successo confermato. Browser1440/390 con risposte provider intercettate: errore preservaemail e retryapre download soltanto dopo conferma simulata. Nessunaemailrealeinviata.
+liquid.js disegna uno sfondo WebGL interattivo con fallback CSS, movimento ridotto e pausa fuori viewport/scheda nascosta. Nessuna libreria esterna. Renderdesktop1440/mobile390 controllato in Chromium/WebGL software. Feedback e installer invariati.
