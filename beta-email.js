@@ -26,8 +26,9 @@
    if(!accepted||result.error||(Array.isArray(result.errors)&&result.errors.length)){
     throw {friendly:'Il servizio non ha confermato l’invio. Riprova più tardi.'};
    }
-   status.textContent='Email ricevuta. Apertura dei download…';
-   window.location.assign('/beta/download/');
+   form.reset();
+   status.textContent='Richiesta ricevuta! Controlla la tua email: il link ai download può impiegare circa 5 minuti. Se hai già richiesto la Beta, cerca il messaggio «Benvenuto nella Beta di Gliffo Suite!». Controlla anche Spam.';
+   button.disabled=false;button.innerHTML=original;pending=false;
   }catch(error){
    status.textContent=error&&error.friendly?error.friendly:'Non riusciamo a confermare l’invio. Riprova tra poco: la tua email è ancora nel campo.';
    button.disabled=false;button.innerHTML=original;pending=false;

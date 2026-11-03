@@ -161,3 +161,7 @@ Il box bianco e il pulsante nero restano invariati. Invio: pulsante disabilitato
 ## Gerarchia e copy semplificati
 
 Hero: Meno clic. Più tempo.; descrizione apre con 8strumenti perAdobeIllustrator, poi griglie/colori/presentazioni/export. ProvalaBeta è l’azione primaria verso#download, Scoprileapp la secondaria. Compatibilità e prova15giorni sono visibili subito. Le panoramiche duplicate e lo statement intermedio sono rimossi; resta un racconto con screenshot, tre vantaggi concreti e CTA. Ogni app ha titolo funzionale e una frase; le vecchie liste sono rimosse. FAQbrevi, invito feedback diretto. Logo, font, colori, glass e shader invariati.
+
+## Conferma iscrizione con link nella posta
+
+Dopo successo, messaggio inline role=status: controllare la posta, attesa indicativa5minuti, ricerca del benvenuto precedente per chi è già iscritto e Spam. Nessuna navigazione o URL download esposta dalla conferma. Il form si svuota e torna disponibile per correggere un eventuale indirizzo; campo email required e pulsante evitano invii doppi accidentali. Il box bianco/nero resta invariato.

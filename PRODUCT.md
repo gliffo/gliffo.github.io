@@ -12,7 +12,7 @@ Gli installer Mac DMG e Windows EXE sono disponibili in `downloads/`, con URL e 
 
 La home usa un modulo HTML nativo: email obbligatoria in un box bianco e pulsante nero affiancato. Il modulo è collegato all’endpoint Formspree https://formspree.io/f/mgaarvej fornito dall’utente. FormSubmit è stato sostituito dopo un errore HTTP522 riscontrato dal titolare. Non servono più le precedenti istruzioni di attivazione FormSubmit.
 
-beta-email.js invia via AJAX, mostra stato in corso e gestisce erroriHTTP/rete/risposta/timeout12secondi senza lasciare il sito. Conserva l’email nel campo e permette retry. Solo una conferma JSON ok=true del provider apre /beta/download/. Nessuna email viene memorizzata in localStorage o inserita negli URL. I download restano pubblici: è registrazione, non autenticazione.
+beta-email.js invia via AJAX, mostra stato in corso e gestisce erroriHTTP/rete/risposta/timeout12secondi senza lasciare il sito. Conserva l’email nel campo e permette retry. Solo una conferma JSON ok=true mostra la conferma dell’iscrizione: il sito non reindirizza ai download, che si raggiungono dal messaggio Gmail. Nessuna email viene memorizzata in localStorage o inserita negli URL. I download restano pubblici: è registrazione, non autenticazione.
 
 Il piano gratuito Formspree verificato consente50invii/mese. I test browser e unitari usano risposte provider simulate/intercettate: ricezione reale nel nuovo account ancora da confermare dall’utente. Il feedback resta su Tally jeZYO9; i vecchi moduli Beta non sono più incorporati nella home.
 
@@ -28,3 +28,7 @@ L’utente ha autorizzato l’automazione gratuita Gmail. Il progetto Apps Scrip
 ## Chiarezza della landing
 
 Priorità richiesta dall’utente: far capire subito che Gliffo è per Adobe Illustrator, riduce i passaggi ripetitivi e si può provare gratuitamente. Hero Meno clic. Più tempo., prima riga 8strumenti perAdobeIllustrator, CTAprincipale ProvalaBeta. Testi dimezzati (773→386parole incluse le descrizioni espandibili), panoramiche ripetute unite, ogniappspiegata con una funzione concreta. Nessun tempo risparmiato quantificato o risultato inventato. Effetti glass/liquidi, moduloFormspree, markerGmail e risorseinstaller preservati. L’utente ha già confermato che invio e accesso ai download funzionano; l’automazioneGmail resta da attivare personalmente.
+
+## Accesso tramite email confermato dall’utente
+
+L’utente ha confermato che il timer Gmail è attivo e che l’email di benvenuto arriva. La consegna del link avviene ora tramite quell’email, dopo la richiesta Formspree; il sito non apre direttamente i download. Il campo viene svuotato dopo conferma. I contatti già accolti vengono invitati a recuperare il precedente benvenuto, senza promettere un reinvio che lo script anti-duplicati non esegue. Link statici condivisibili: nessuna autenticazione del download dichiarata.

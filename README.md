@@ -39,11 +39,11 @@ Documentazione ufficiale: https://developers.tally.so/widgets/embeds e https://t
 
 Il box email HTML nativo punta a https://formspree.io/f/mgaarvej, endpoint fornito dall’autore. Il layout bianco/nero resta nel sito; solo il feedback usa ancora Tally jeZYO9. FormSubmit è stato ritirato dopo HTTP522: non è più necessaria la sua attivazione.
 
-beta-email.js invia con Accept application/json; solo una conferma ok=true apre /beta/download/. Il redirect è fisso e non trasporta email. ErroriHTTP522/429, rete,JSONerrato, rifiuti e timeout12s lasciano il visitatore nel sito, conservano il campo e permettono retry. Nessuna email in localStorage e nessun successo simulato nel codice di produzione.
+beta-email.js invia con Accept application/json; solo una conferma ok=true mostra le istruzioni per controllare la posta. Non c’è più redirect ai download né link download nel messaggio del sito. ErroriHTTP522/429, rete,JSONerrato, rifiuti e timeout12s lasciano il visitatore nel sito, conservano il campo e permettono retry. Nessuna email in localStorage e nessun successo simulato nel codice di produzione.
 
 Per cambiare endpoint usare scripts/configure-formspree.py con il nuovo URL reale dell’account. Non usare scripts/configure-beta.py o beta-access.js: appartengono alla precedente integrazione Tally Beta, non caricata dalla home. Il piano gratuito Formspree verificato consente50invii/mese; quota e notifiche si gestiscono nell’account dell’autore. Documentazione: https://help.formspree.io/articles/building-your-form/submit-forms-with-javascript-ajax e https://formspree.io/plans/.
 
-Verifica: node tests/beta-email.cjs copre522,rete,timeout,429,HTML/JSONerrato,falsoconferme,doppiinvii e successoconfermato. Browserdesktop1440/mobile390 con tutte le richieste provider intercettate: email preservata dopo522, retrye redirectsolo dopo confermasimulata. Nessun invio reale eseguito. Prima dei tester l’autore deve inviare una prova dal sito, verificarla in Formspree e controllare l’apertura dei download.
+Verifica: node tests/beta-email.cjs copre522,rete,timeout,429,HTML/JSONerrato,falsoconferme,doppiinvii e successoconfermato. Browserdesktop1440/mobile390 con tutte le richieste provider intercettate: email preservata dopo522, retry e conferma nella pagina, senza redirect ai download. Nessun invio reale eseguito. Prima dei tester l’autore deve inviare una prova dal sito, verificarla in Formspree e controllare l’apertura dei download.
 
 ## Effetto liquido della home
 
@@ -56,3 +56,7 @@ Il pacchetto automation/gmail/Gliffo_Benvenuto_Gmail.zip contiene Code.gs, istru
 ## Landing più chiara
 
 La home mette in evidenza AdobeIllustrator, risparmiodipassaggi e provaBeta15giorni. Testi ridotti da773a386parole, una panoramica con screenshot e otto descrizioni brevi. CTAheader/hero/modulo ProvalaBeta; formendpoint/markerGmail e scriptinvariati. Verificati desktop1440/mobile390, nessunoverflow, linkancora, selezioneapp e rendererWebGL. Nessun invio reale eseguito per questa modifica; il funzionamento del flussoFormspree è già confermato dall’utente.
+
+## Consegna del link via email
+
+L’utente ha confermato di aver attivato e verificato l’automazione Gmail. Per sua richiesta, dopo l’iscrizione il sito mostra Controllala tuaemail e non apre più i download. Il modulo viene svuotato per evitare un secondo invio accidentale; resta possibile correggere l’indirizzo con una nuova richiesta. Chi si è già iscritto deve cercare il precedente benvenuto, perché lo script Gmail evita duplicati. Invio indicativo entro circa5minuti; controllare Spam. Endpoint Formspree e marker invariati: nessuna modifica allo script Google è richiesta. Le URL download restano pubbliche e condivisibili, quindi il flusso non equivale a un’area riservata autenticata.
