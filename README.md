@@ -19,8 +19,10 @@ L’embed usa lo script ufficiale Tally per l’altezza dinamica; il link dirett
 
 L’ambiente cloud non raggiunge tally.so: il proxy rifiuta la connessione. Il link è quello fornito dall’autore; non è stata verificata la struttura effettiva del modulo né inviata una risposta di prova. Dal browser normale aprire /feedback/, controllare il modulo su desktop/mobile e inviare una segnalazione identificata come prova; verificare che arrivi nell’account Tally corretto. Non attivare richieste di accesso per i tester.
 
-## Altezza del modulo
+## Altezza e caricamento del modulo
 
-Il loader ufficiale Tally ora avvia l’iframe dopo aver preparato i parametri; non viene avviato prima tramite src HTML. Il CSS non impone un’altezza fissa: dynamicHeight=1 gestisce il contenuto lungo. L’attributo height è solo la dimensione iniziale. Se lo script non si carica, rimangono il link diretto sopra il modulo e il caricamento iframe di recupero. Il test `node tests/embed.cjs` simula disponibilità, caricamento e errore dello SDK; non prova l’invio reale a Tally.
+L’iframe contiene sempre il suo src HTML: il modulo si carica anche con JavaScript disabilitato o SDK bloccato. Lo script ufficiale Tally migliora il ridimensionamento; non è una condizione per mostrare il form. Il CSS non impone un’altezza fissa. Parametri app/version/os/illustrator sono preparati all’avvio; non si ricarica il modulo senza un cambiamento di contesto. Il link diretto rimane sopra il modulo. Gli URL dei file CSS e JS sono versionati per evitare una pagina nuova con loader vecchio in cache.
+
+Il test `node tests/embed.cjs` verifica il caricamento nativo presente nel markup, l’assenza di occultamento senza JS, gli errori SDK senza svuotamento o ricaricamento del modulo, e i parametri ammessi. SDK simulato: non è un collaudo dell’invio reale o della disponibilità del modulo Tally.
 
 Colori da applicare nell’editor Tally, nei controlli disponibili: sfondo #24262A; testo #F4F4F2; testo secondario #B9C0CA; pulsante #EA5C53; testo pulsante #1B1D20; campi #363B42; bordi #505761. Questi valori sono una guida: non modificano automaticamente il tema Tally.
