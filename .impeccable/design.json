@@ -269,6 +269,34 @@
           "oklch(from #E7DCC8 0.84 c h)",
           "oklch(from #E7DCC8 0.95 c h)"
         ]
+      },
+      "hero-extrusion": {
+        "role": "neutral",
+        "displayName": "Profondità viola della g",
+        "tonalRamp": [
+          "oklch(from #353c69 0.15 c h)",
+          "oklch(from #353c69 0.26 c h)",
+          "oklch(from #353c69 0.38 c h)",
+          "oklch(from #353c69 0.49 c h)",
+          "oklch(from #353c69 0.61 c h)",
+          "oklch(from #353c69 0.72 c h)",
+          "oklch(from #353c69 0.84 c h)",
+          "oklch(from #353c69 0.95 c h)"
+        ]
+      },
+      "hero-badge-active": {
+        "role": "neutral",
+        "displayName": "Targa app attiva",
+        "tonalRamp": [
+          "oklch(from #343944 0.15 c h)",
+          "oklch(from #343944 0.26 c h)",
+          "oklch(from #343944 0.38 c h)",
+          "oklch(from #343944 0.49 c h)",
+          "oklch(from #343944 0.61 c h)",
+          "oklch(from #343944 0.72 c h)",
+          "oklch(from #343944 0.84 c h)",
+          "oklch(from #343944 0.95 c h)"
+        ]
       }
     },
     "typographyMeta": {
@@ -279,14 +307,34 @@
     },
     "shadows": [
       {
-        "name": "tool-label",
-        "value": "0 12px 22px #1415192b",
-        "purpose": "Targhe laboratorio."
-      },
-      {
         "name": "suite-window",
         "value": "8px 24px 44px #24262a38",
         "purpose": "Screenshot Suite sul pannello avorio."
+      },
+      {
+        "name": "hero-plane",
+        "value": "16px 26px 44px #11131755",
+        "purpose": "Piani sovrapposti del laboratorio."
+      },
+      {
+        "name": "hero-front-plane",
+        "value": "7px 13px 22px #1b1d203b",
+        "purpose": "Piano viola frontale."
+      },
+      {
+        "name": "tool-label",
+        "value": "0 14px 28px #10121666",
+        "purpose": "Targhe app sollevate."
+      },
+      {
+        "name": "tool-label-active",
+        "value": "0 16px 32px #10121680, inset 0 -3px var(--tool)",
+        "purpose": "Targa app attiva."
+      },
+      {
+        "name": "mark-depth",
+        "value": "drop-shadow(7px 12px 8px #1b1d2033)",
+        "purpose": "Marchio originale sopra estrusione."
       }
     ],
     "motion": [
@@ -365,7 +413,7 @@
       "kind": "chip",
       "description": "Selezione strumento con accento dedicato; marchio originale nel sito.",
       "html": "<a class=\"ds-tool\" href=\"#app-nesso\">Nesso</a>",
-      "css": ".ds-tool{display:inline-flex;align-items:center;justify-content:center;min-width:148px;height:56px;padding:13px 15px;border:1px solid #ffffff18;border-radius:7px;background:var(--bg,#24262a);color:var(--ink,#f4f4f2);box-shadow:0 12px 22px #1415192b;font:600 20px Bricolage,sans-serif;text-decoration:none;transition:border-color .2s,background .2s,translate .2s}.ds-tool:hover{border-color:#7c86c1;background:#30343a;translate:0 -3px}.ds-tool:focus-visible{outline:2px solid var(--coral,#ea5c53);outline-offset:7px}"
+      "css": ".ds-tool{display:inline-flex;align-items:center;justify-content:center;min-width:148px;height:56px;padding:13px 15px;border:none;border-radius:7px;background:var(--surface,#2c3036);color:var(--ink,#f4f4f2);box-shadow:0 14px 28px #10121666;font:600 20px Bricolage,sans-serif;text-decoration:none;transition:border-color .2s,background .2s,translate .2s}.ds-tool:hover{background:#343944;box-shadow:0 16px 32px #10121680,inset 0 -3px #7c86c1;translate:0 -3px}.ds-tool:focus-visible{outline:2px solid var(--coral,#ea5c53);outline-offset:7px}"
     },
     {
       "name": "Disclosure app",
@@ -378,9 +426,16 @@
       "name": "Download disponibile",
       "kind": "card",
       "refersTo": "download-enabled",
-      "description": "Link HTML statico all’installer corrente, disponibile anche senza JavaScript; manifest solo per URL e hash.",
+      "description": "Link HTML statico nella pagina pubblica separata /beta/download/; nessun controllo autenticato.",
       "html": "<a class=\"ds-download\" href=\"/downloads/Gliffo%20Suite%20Beta.dmg\"><strong>Mac</strong><small>Beta 1.0.0 · .dmg</small></a>",
       "css": ".ds-download{display:block;background:#1b1d20;color:var(--ink,#f4f4f2);border:1px solid #1b1d20;border-radius:9px;padding:21px 23px;text-decoration:none;font-family:Bricolage,sans-serif;transition:background .2s,transform .2s}.ds-download strong{display:block;font-size:25px;font-weight:600}.ds-download small{display:block;margin-top:7px;font-size:13px}.ds-download:hover{background:#303238;transform:translateY(-2px)}.ds-download:focus-visible{outline:2px solid #1b1d20;outline-offset:7px}"
+    },
+    {
+      "name": "Accesso Beta",
+      "kind": "custom",
+      "description": "Modulo Tally dedicato alla registrazione; campi e tema interni gestiti dal provider. Pagina download pubblica.",
+      "html": "<section class=\"ds-access\"><h3>Accedi alla Beta</h3><p>Lascia la tua email, poi scegli la versione per il tuo computer.</p><a href=\"https://tally.so/r/2jXzv9\">Il modulo non compare? Aprilo su Tally</a></section>",
+      "css": ".ds-access{background:var(--coral,#ea5c53);color:#1b1d20;padding:28px;font-family:Bricolage,sans-serif}.ds-access h3{font-size:32px;line-height:1.15;margin:0 0 12px}.ds-access p{font-size:17px;line-height:1.5;max-width:37ch}.ds-access a{color:#1b1d20;font-size:13px;text-decoration:underline;text-underline-offset:3px}.ds-access a:hover{text-decoration-thickness:2px}.ds-access a:focus-visible{outline:2px solid #1b1d20;outline-offset:7px}"
     }
   ],
   "narrative": {

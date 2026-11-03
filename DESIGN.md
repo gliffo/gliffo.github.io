@@ -13,6 +13,8 @@ colors:
   action-ink: "#1B1D20"
   primary-hover: "#F6776D"
   preview: "#1D1F23"
+  hero-extrusion: "#353C69"
+  hero-badge-active: "#343944"
   nesso: "#7C86C1"
   trama: "#40B497"
   modulo: "#E9AD41"
@@ -109,19 +111,20 @@ Feedback preservato: shell 880px con 824px interni, margine desktop 28px e mobil
 
 ## Elevation & Depth
 
-Prevalgono linee e campiture. Le targhe app del laboratorio hanno ombra lieve; la finestra Suite ruotata ha ombra più ampia. La preview app usa una superficie scura distinta. Il movimento del laboratorio è limitato al puntatore; focus e selezione funzionano anche da tastiera. Animazioni introduttive solo desktop con movimento consentito; reduced-motion disattiva animazioni, transizioni e inclinazioni.
+Prevalgono linee e campiture. Il laboratorio hero ora usa piani sovrapposti menta, corallo e viola derivati dagli accenti app, con ombre direzionali; sei sagome della g originale formano un’estrusione viola scura. Le targhe app hanno ombre più definite e inclinazioni individuali; la finestra Suite ruotata ha ombra più ampia. La preview app usa una superficie scura distinta. Il movimento del laboratorio è limitato al puntatore; focus e selezione funzionano anche da tastiera. Animazioni introduttive solo desktop con movimento consentito; reduced-motion disattiva animazioni, transizioni e inclinazioni.
 
 ## Shapes
 
-Azioni con angoli compatti; targhe app, download e preview seguono i raggi del frontmatter. Cerchi, punti di ancoraggio e maniglie appartengono al laboratorio vettoriale. I disclosure delle app e FAQ sono righe separate da bordi, non una griglia di card equivalenti.
+Azioni con angoli compatti; targhe app, download e preview seguono i raggi del frontmatter. Cerchi, punti di ancoraggio e maniglie appartengono al laboratorio vettoriale. I piani colorati hanno raggio 16px; la profondità della g è una maschera del marchio originale, non una nuova versione del logo. I disclosure delle app e FAQ sono righe separate da bordi, non una griglia di card equivalenti.
 
 ## Components
 
 - **Azioni:** pulsante primario corallo; hover più chiaro con spostamento di 2px. Variante outline per invito feedback; focus di 2px, offset 7px nella home: corallo sulle superfici scure e inchiostro scuro nelle sezioni download e racconto avorio.
 - **Navigazione:** logo originale e link testuali; sotto 760px scompaiono i link secondari marcati wide-link, resta l’accesso alle azioni principali.
-- **Targhe laboratorio:** otto link con SVG originali; hover/focus selezionano accento e descrizione, clic apre la relativa app nell’explorer.
+- **Targhe laboratorio:** otto link con SVG originali; hover/focus selezionano accento e descrizione, clic apre la relativa app nell’explorer. Le targhe usano superficie scura, ombra direzionale e bordo inferiore interno nel colore dello strumento attivo.
 - **Explorer app:** disclosure esclusivi e preview corrente; liste e immagini descrivono funzioni concrete della Beta. Il ruolo nell’intestazione aperta usa il testo chiaro principale; l’accento app resta nella freccia e negli elementi grafici.
-- **Download:** link HTML statici Mac e Windows ai pacchetti correnti, disponibili anche senza JavaScript. Etichette, versione e istruzioni di installazione sono nell’HTML; downloads.json registra URL e hash, senza fetch runtime.
+- **Accesso Beta:** la sezione corallo della home contiene il modulo Tally trasparente 2jXzv9, titolo nascosto, altezza dinamica e fallback diretto; iframe con src nativo e titolo accessibile. L’editor Tally controlla i campi, non CSS locale. L’esito provider atteso porta a /beta/download/.
+- **Download:** link HTML statici Mac e Windows solo nella pagina separata /beta/download/, disponibili senza JavaScript. Questa pagina noindex resta pubblica. downloads.json registra URL e hash, senza fetch runtime.
 - **Feedback esistente:** modulo gestito da Tally, link diretto sopra iframe, recupero email, footer copyright e focus corallo. Conservare queste definizioni.
 
 ## Do's and Don'ts

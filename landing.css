@@ -2,3 +2,25 @@
 
 /* Keyboard focus on the two light grounds must contrast with their backgrounds. */
 .download-section a:focus-visible,.workspace-story a:focus-visible{outline-color:#1b1d20}
+
+/* Raised vector layers. All colours come from the existing app marks. */
+.hero{position:relative;isolation:isolate;overflow:hidden}
+.hero-copy{position:relative}
+.hero-spectrum{display:flex;width:176px;height:5px;margin-top:34px;transform:rotate(-3deg);transform-origin:left center;gap:3px}
+.hero-spectrum span{flex:1;background:#7c86c1}.hero-spectrum span:nth-child(2){background:#40b497}.hero-spectrum span:nth-child(3){background:#e9ad41}.hero-spectrum span:nth-child(4){background:#d85e9f}.hero-spectrum span:nth-child(5){background:#b7d050}.hero-spectrum span:nth-child(6){background:#ec682d}.hero-spectrum span:nth-child(7){background:#43a6de}.hero-spectrum span:nth-child(8){background:#e7dcc8}
+.lab-plates{position:absolute;inset:0;pointer-events:none;transform:translate3d(calc(var(--mx)*-7px),calc(var(--my)*-7px),-25px);transition:transform .3s}
+.lab-plate{position:absolute;width:382px;height:356px;left:135px;top:118px;border-radius:16px;box-shadow:16px 26px 44px #11131755;transform-origin:50% 60%}
+.lab-plate-back{background:#40b497;transform:translate(-36px,-9px) rotate(-15deg)}
+.lab-plate-middle{background:#ea5c53;transform:translate(22px,29px) rotate(12deg)}
+.lab-plate-front{background:#7c86c1;transform:rotate(-4deg);box-shadow:7px 13px 22px #1b1d203b}
+.plate-registration{position:absolute;width:16px;height:16px;color:#f4f4f299}.plate-registration:before,.plate-registration:after{content:'';position:absolute;background:currentColor}.plate-registration:before{width:16px;height:1px;top:7px}.plate-registration:after{height:16px;width:1px;left:7px}.registration-one{left:15px;top:15px}.registration-two{right:15px;top:15px}.registration-three{left:15px;bottom:15px}.registration-four{right:15px;bottom:15px}
+.lab-extrusion{position:absolute;left:148px;top:148px;width:350px;height:285px;pointer-events:none;transform:translate3d(calc(var(--mx)*8px),calc(var(--my)*8px),25px);transition:transform .25s}
+.lab-extrusion i{position:absolute;inset:0;background:#353c69;mask:url('/assets/gliffo-icon.svg') center/contain no-repeat;transform:translate(3px,4px)}
+.lab-extrusion i:nth-child(2){transform:translate(6px,8px)}.lab-extrusion i:nth-child(3){transform:translate(9px,12px)}.lab-extrusion i:nth-child(4){transform:translate(12px,16px)}.lab-extrusion i:nth-child(5){transform:translate(15px,20px)}.lab-extrusion i:nth-child(6){transform:translate(18px,24px)}
+.lab-mark{filter:drop-shadow(7px 12px 8px #1b1d2033)}
+.lab-geometry{color:#f4f4f2}.lab-lines{opacity:.65}.lab-app{border:none;box-shadow:0 14px 28px #10121666;background:#2c3036}
+.lab-app.active,.lab-app:hover,.lab-app:focus-visible{background:#343944;box-shadow:0 16px 32px #10121680,inset 0 -3px var(--tool)}
+.lab-app-nesso{transform:translateZ(70px) rotate(-5deg)}.lab-app-trama{transform:translateZ(52px) rotate(4deg)}.lab-app-capsula{transform:translateZ(50px) rotate(-3deg)}.lab-app-modulo{transform:translateZ(65px) rotate(5deg)}.lab-app-scena{transform:translateZ(65px) rotate(3deg)}.lab-app-tono{transform:translateZ(70px) rotate(-4deg)}.lab-app-soglia{transform:translateZ(48px) rotate(-3deg)}.lab-app-tipo{transform:translateZ(58px) rotate(4deg)}
+.beta-access{align-items:center}.beta-entry{max-width:590px;color:#1b1d20}.beta-entry h3{font-size:32px;line-height:1.15;margin-bottom:12px}.beta-entry>p{font-size:17px;line-height:1.5;max-width:37ch}.beta-entry .beta-purpose{font-size:12px;margin-top:20px;max-width:50ch}.beta-form-preview{margin-top:28px}.beta-form-preview label{display:block;font-size:14px;font-weight:600;margin-bottom:10px}.beta-email-row{display:flex;gap:8px}.beta-email-row input{min-width:0;flex:1;background:#f4f4f2;color:#1b1d20;border:2px solid #1b1d20;border-radius:6px;padding:15px;font:inherit;caret-color:#ea5c53;opacity:1;-webkit-text-fill-color:#1b1d20}.beta-email-row input::placeholder{color:#54565a}.beta-email-row button{display:flex;align-items:center;justify-content:center;gap:8px;background:#1b1d20;color:#f4f4f2;border:0;padding:15px;border-radius:6px;font-weight:600;white-space:nowrap;opacity:1}.beta-email-row button svg{width:20px;height:20px}.beta-form-status{font-size:12px;line-height:1.5;margin-top:12px;max-width:65ch}.beta-embed{width:100%;margin-top:18px}.beta-embed iframe{display:block;width:100%;border:0;min-height:250px}.beta-embed>a{display:inline-block;font-size:13px;text-decoration:underline;text-underline-offset:3px;margin-bottom:10px}.beta-embed a:focus-visible{outline-color:#1b1d20}
+@media(max-width:760px){.hero-spectrum{margin-top:24px}.hero-copy{padding-bottom:10px}.beta-entry h3{font-size:27px}.beta-email-row{flex-direction:column}.beta-email-row button{justify-content:space-between}.beta-email-row input{width:100%}.beta-entry>p{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.lab-plates,.lab-extrusion{transform:none!important}.lab-app{animation:none!important}}
