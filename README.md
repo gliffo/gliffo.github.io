@@ -44,3 +44,15 @@ La home presenta ora l’accesso Beta tramite il nuovo modulo Tally `2jXzv9` (ht
 Il provider non è renderizzabile da questo ambiente: campo email effettivo, obbligatorietà e invio reale del nuovo modulo non sono verificati. È stato chiesto all’utente di impostare Email obbligatoria e redirect di completamento del modulo standalone a https://gliffo.github.io/beta/download/; conferma ancora in attesa. Nessuna verifica end-to-end completa è dichiarata.
 
 La revisione finale approva il raffinamento visivo locale dell’header: piani colorati, g originale estrusa tramite maschere e targhe app, con movimento ridotto rispettato. Richiede una nuova cattura della sezione Beta quando Tally sarà raggiungibile. Questa approvazione non copre il flusso email completo. Feedback e styles.css restano separati e invariati; la precedente conferma d’uso del feedback non verifica il nuovo form Beta.
+
+## Effetto liquido della home
+
+`liquid.js` disegna uno sfondo WebGL interattivo, con fallback CSS e supporto al movimento ridotto. Nessuna libreria o richiesta esterna per l’effetto. I rendering desktop1440/mobile390 sono stati controllati in Chromium con WebGL software; il modulo Tally non è modificato e il suo invio reale resta da verificare dal browser dell’autore.
+
+## Accesso Beta: stato attuale (modulo nativo)
+
+Il modulo Beta Tally è sostituito dal form HTML in index.html. Il modulo POST punta a https://formsubmit.co/gliffosuite@gmail.com, con email obbligatoria, oggetto dedicato e _next=https://gliffo.github.io/beta/download/. Nessun JS è necessario per inviare. L’antispam del provider resta attivo. Non eseguire scripts/configure-beta.py: è il precedente configuratore Tally, conservato come storico.
+
+Attivazione necessaria: aprire il sito pubblico, inviare una volta la propria email, aprire nella casella gliffosuite@gmail.com il messaggio FormSubmit e confermare Activate Form. Ripetere un invio per verificare ricezione e ritorno ai download. La prima conferma e l’invio reale non sono stati eseguiti qui. I test browser intercettano il POST, verificano campi e validazione e restituiscono una risposta simulata; non inviano email.
+
+Documentazione del servizio: https://formsubmit.co/documentation e https://formsubmit.co/help. Feedback Tally separato e installer invariati.

@@ -3,6 +3,9 @@ name: Gliffo Suite · Laboratorio vettoriale
 description: Estensione della home Gliffo; feedback conserva il sistema operativo esistente.
 colors:
   background: "#24262A"
+  home-night: "#15131E"
+  home-hero-highlight: "#FF8F83"
+  home-glass: "#241D3C66"
   surface: "#2C3036"
   ink: "#F4F4F2"
   muted: "#B9C0CA"
@@ -83,7 +86,7 @@ La home estende il fondo scuro e i marchi originali Gliffo con tipografia espres
 
 **Key Characteristics:**
 - Marchi SVG originali e accenti riconoscibili per app.
-- Gerarchia editoriale e superfici prevalentemente piatte.
+- Gerarchia editoriale, sfumature liquide e vetro nel primo viewport.
 - Interazione limitata e rispettosa del movimento ridotto.
 
 ## Colors
@@ -138,3 +141,15 @@ Azioni con angoli compatti; targhe app, download e preview seguono i raggi del f
 - Don’t applicare Bricolage o le nuove misure home al feedback implicitamente.
 - Don’t presentare guide della landing o mock CEP come esecuzione nativa Illustrator.
 - Don’t sostituire gli SVG originali con marchi ricreati.
+
+## Aggiornamento: sfumature, vetro e liquido
+
+Richiesta esplicita: landing colorata con sfumature, vetro ed effetti liquidi. Il primo viewport usa `liquid.js`, un campo cromatico WebGL procedurale con distorsione e rifrazione geometrica, controllato lentamente dal tempo e dal puntatore. Non è una simulazione fluidodinamica fisica. La lente CSS traslucida e le targhe app usano backdrop-filter su questo sfondo reale; gli SVG restano originali. Nessun asset raster generato.
+
+La home usa un fondo notturno #15131E e accento hero #FF8F83. Il vetro app ha fondo #241D3C66, blur 24px (14px mobile), bordi #FFFFFF50 e ombre morbide. La lente usa blur 7px, saturazione 1.45 e riflessi sfumati. Bianco e corallo restano colori di testo pieni, senza testo a gradiente. Le altre sezioni introducono sfumature lilla, rosa e turchese senza alterare i contenuti.
+
+WebGL è limitato a circa 30 fotogrammi al secondo e 1,4 milioni di pixel. Il rendering si ferma fuori viewport, in schede nascoste e con movimento ridotto. In quest’ultimo caso resta una composizione statica. Se WebGL manca o il contesto si perde, resta lo sfondo CSS; testi e link funzionano. I token feedback e styles.css rimangono invariati.
+
+## Modulo email nativo
+
+Richiesta utente: box bianco con email e pulsante nero affiancato. .email-shell: #FFFFFF, raggio13px, padding6px, gap6px, ombra0 12px 28px #501D1D18. Input trasparente, testo#1B1D20, placeholder#62656B. Pulsante#111111/testo#FFFFFF, raggio8px e padding14px 18px, sempre affiancato; sotto450px riduce padding e label per restare su una riga. Etichetta email reale, input typeemail obbligatorio e autocompleteemail. Focus scuro visibile sul gruppo bianco. La validazione è quella nativa del browser; il POST e il ritorno ai download sono gestiti da FormSubmit. Non viene più caricato Tally nella sezione Beta. Nessun successo finto nel frontend e nessuna chiave segreta. Il feedback continua a usare il suo Tally originale.

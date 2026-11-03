@@ -411,7 +411,7 @@
     {
       "name": "Targa laboratorio",
       "kind": "chip",
-      "description": "Selezione strumento con accento dedicato; marchio originale nel sito.",
+      "description": "Targa in vetro traslucido, backdrop-filter sullo sfondo liquido, marchio originale e accento app.",
       "html": "<a class=\"ds-tool\" href=\"#app-nesso\">Nesso</a>",
       "css": ".ds-tool{display:inline-flex;align-items:center;justify-content:center;min-width:148px;height:56px;padding:13px 15px;border:none;border-radius:7px;background:var(--surface,#2c3036);color:var(--ink,#f4f4f2);box-shadow:0 14px 28px #10121666;font:600 20px Bricolage,sans-serif;text-decoration:none;transition:border-color .2s,background .2s,translate .2s}.ds-tool:hover{background:#343944;box-shadow:0 16px 32px #10121680,inset 0 -3px #7c86c1;translate:0 -3px}.ds-tool:focus-visible{outline:2px solid var(--coral,#ea5c53);outline-offset:7px}"
     },
@@ -433,9 +433,9 @@
     {
       "name": "Accesso Beta",
       "kind": "custom",
-      "description": "Modulo Tally dedicato alla registrazione; campi e tema interni gestiti dal provider. Pagina download pubblica.",
-      "html": "<section class=\"ds-access\"><h3>Accedi alla Beta</h3><p>Lascia la tua email, poi scegli la versione per il tuo computer.</p><a href=\"https://tally.so/r/2jXzv9\">Il modulo non compare? Aprilo su Tally</a></section>",
-      "css": ".ds-access{background:var(--coral,#ea5c53);color:#1b1d20;padding:28px;font-family:Bricolage,sans-serif}.ds-access h3{font-size:32px;line-height:1.15;margin:0 0 12px}.ds-access p{font-size:17px;line-height:1.5;max-width:37ch}.ds-access a{color:#1b1d20;font-size:13px;text-decoration:underline;text-underline-offset:3px}.ds-access a:hover{text-decoration-thickness:2px}.ds-access a:focus-visible{outline:2px solid #1b1d20;outline-offset:7px}"
+      "description": "Modulo nativo: box bianco con email obbligatoria e pulsante nero affiancato. POST FormSubmit, attivazione del titolare richiesta; download pubblici dopo invio.",
+      "html": "<div class=\"ds-email\"><input type=\"email\" placeholder=\"nome@studio.it\" aria-label=\"Email\"><button type=\"button\">Accedi alla Beta</button></div>",
+      "css": ".ds-email{display:flex;gap:6px;padding:6px;background:#fff;border-radius:13px}.ds-email input{min-width:0;flex:1;border:0;padding:13px;color:#1b1d20}.ds-email button{background:#111;color:#fff;border:0;border-radius:8px;padding:14px 18px}"
     }
   ],
   "narrative": {
@@ -462,6 +462,8 @@
       "Don’t applicare Bricolage o le nuove misure home al feedback implicitamente.",
       "Don’t presentare guide della landing o mock CEP come esecuzione nativa Illustrator.",
       "Don’t sostituire gli SVG originali con marchi ricreati."
-    ]
+    ],
+    "liquidDirection": "Richiesta utente: sfumature, vetro e liquido. Home-night #15131E, highlight #FF8F83; canvas WebGL capped30fps/1.4M pixels, pausedoffscreen/hidden/reducedmotion, CSSfallback. Originallogos andTally preserved.",
+    "betaEmailCurrent": "ModuloHTML nativo FormSubmit: white #FFFFFF radius13 padding6, input/black#111 sidebyside button radius8; browserrequiredemail, nativePOST with_next to publicdownloads; owneractivation pending. FeedbackTallyunchanged."
   }
 }

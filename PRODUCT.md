@@ -10,8 +10,12 @@ Gli installer Mac DMG e Windows EXE sono disponibili in `downloads/`, con URL e 
 
 ## Accesso Beta corrente
 
-La home presenta ora l’accesso Beta tramite il nuovo modulo Tally `2jXzv9` (https://tally.so/r/2jXzv9), distinto dal feedback `jeZYO9`. I link installer sono nella pagina pubblica `/beta/download/`, marcata noindex/nofollow: la registrazione è un percorso UI su GitHub Pages, non autenticazione o protezione dei file.
+La home usa un modulo HTML nativo: email obbligatoria in un box bianco e pulsante nero affiancato, con invio POST a FormSubmit verso gliffosuite@gmail.com. L’utente ha autorizzato un servizio diverso da Tally per raccogliere soltanto le email. Il provider richiede un’attivazione da parte del titolare della casella dopo il primo invio; non è stata inviata una prova reale da questo ambiente e l’attivazione non è confermata.
 
-Il sito non conserva o inoltra email: le risposte sono gestite da Tally. Il listener locale accetta soltanto eventi di invio con origine, finestra iframe, formId e identificatore risposta attesi e naviga alla pagina download. I binari restano invariati.
+Dopo un invio gestito correttamente dal provider, il parametro _next porta alla pagina pubblica /beta/download/, che contiene gli stessi installer Mac/Windows ed è marcata noindex. Il sito non conserva email in localStorage o parametri URL. Il provider gestisce invio, controlli antispam e reindirizzamento; il sito non mostra successi simulati. Questo è un percorso di registrazione, non autenticazione dei download pubblici.
 
-Il provider non è renderizzabile da questo ambiente: campo email effettivo, obbligatorietà e invio reale del nuovo modulo non sono verificati. È stato chiesto all’utente di impostare Email obbligatoria e redirect di completamento del modulo standalone a https://gliffo.github.io/beta/download/; conferma ancora in attesa. Nessuna verifica end-to-end completa è dichiarata.
+Il feedback resta sul modulo Tally jeZYO9. Il vecchio modulo Beta Tally 2jXzv9 non è più incorporato nella home; non viene eliminato o alterato dall’account dell’utente.
+
+## Direzione visiva richiesta dall’utente
+
+La home conserva il laboratorio vettoriale e i marchi originali, reinterpretati con sfumature colorate, sfondo liquido interattivo WebGL e superfici in vetro. La richiesta esplicita sostituisce il precedente trattamento a piani piatti. Percorso Tally, raccolta email e installer restano invariati.

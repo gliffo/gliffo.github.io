@@ -24,3 +24,39 @@
 .beta-access{align-items:center}.beta-entry{max-width:590px;color:#1b1d20}.beta-entry h3{font-size:32px;line-height:1.15;margin-bottom:12px}.beta-entry>p{font-size:17px;line-height:1.5;max-width:37ch}.beta-entry .beta-purpose{font-size:12px;margin-top:20px;max-width:50ch}.beta-form-preview{margin-top:28px}.beta-form-preview label{display:block;font-size:14px;font-weight:600;margin-bottom:10px}.beta-email-row{display:flex;gap:8px}.beta-email-row input{min-width:0;flex:1;background:#f4f4f2;color:#1b1d20;border:2px solid #1b1d20;border-radius:6px;padding:15px;font:inherit;caret-color:#ea5c53;opacity:1;-webkit-text-fill-color:#1b1d20}.beta-email-row input::placeholder{color:#54565a}.beta-email-row button{display:flex;align-items:center;justify-content:center;gap:8px;background:#1b1d20;color:#f4f4f2;border:0;padding:15px;border-radius:6px;font-weight:600;white-space:nowrap;opacity:1}.beta-email-row button svg{width:20px;height:20px}.beta-form-status{font-size:12px;line-height:1.5;margin-top:12px;max-width:65ch}.beta-embed{width:100%;margin-top:18px}.beta-embed iframe{display:block;width:100%;border:0;min-height:250px}.beta-embed>a{display:inline-block;font-size:13px;text-decoration:underline;text-underline-offset:3px;margin-bottom:10px}.beta-embed a:focus-visible{outline-color:#1b1d20}
 @media(max-width:760px){.hero-spectrum{margin-top:24px}.hero-copy{padding-bottom:10px}.beta-entry h3{font-size:27px}.beta-email-row{flex-direction:column}.beta-email-row button{justify-content:space-between}.beta-email-row input{width:100%}.beta-entry>p{font-size:16px}}
 @media(prefers-reduced-motion:reduce){.lab-plates,.lab-extrusion{transform:none!important}.lab-app{animation:none!important}}
+
+/* Liquid light + real backdrop glass. Requested visual direction, home only. */
+body:has(.hero-world){background:#15131e}
+.hero-world{position:absolute;inset:0 0 auto;height:960px;isolation:isolate;pointer-events:none;background:radial-gradient(ellipse at 83% 48%,#a45eff88,transparent 43%),radial-gradient(ellipse at 65% 70%,#ea5c5377,transparent 45%),radial-gradient(ellipse at 95% 15%,#40b49788,transparent 42%),#15131e}
+#liquid-canvas{display:block;width:100%;height:100%;pointer-events:none}
+body:has(.hero-world)>.site-header,.hero-world>.site-header{position:relative;z-index:6;pointer-events:auto}
+.hero-world>.site-header{background:#211b2b38;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-color:#ffffff20}
+body:has(.hero-world) main{position:relative;padding-top:104px}
+.hero{overflow:visible;background:transparent;min-height:756px}
+.hero-copy{z-index:4}.hero h1{color:#fff;max-width:680px;text-shadow:0 3px 30px #100d2d44}.hero h1>span{color:#ff8f83}.hero-copy>p:not(.hero-note){color:#e1dce8}.hero-copy strong{color:#fff}.hero-note{color:#d9d2e4}.hero-spectrum{display:none}
+.hero .primary{background:#f4f4f2;color:#1b1d20;box-shadow:0 12px 32px #0e0b2144}.hero .primary:hover{background:#fff}.hero .text-link{color:#fff}
+.laboratory{z-index:2}.lab-plane{transform-style:preserve-3d}.lab-mark{filter:drop-shadow(2px 8px 2px #ffffff14) drop-shadow(7px 24px 22px #16102c66);transform:translate3d(calc(var(--mx)*11px),calc(var(--my)*11px),50px)}
+.liquid-lens{position:absolute;left:125px;top:106px;width:400px;height:385px;border-radius:43% 57% 55% 45% / 46% 44% 56% 54%;background:linear-gradient(142deg,#ffffff32 0%,#ffffff06 37%,#a69cff10 58%,#ffffff28 100%);backdrop-filter:blur(7px) saturate(1.45);-webkit-backdrop-filter:blur(7px) saturate(1.45);box-shadow:inset 1px 2px 2px #ffffff9c,inset -2px -2px 3px #c8adff66,16px 36px 60px #0c082e66;transform:translate3d(calc(var(--mx)*-8px),calc(var(--my)*-8px),-5px) rotate(-12deg);transition:transform .6s cubic-bezier(.16,1,.3,1);pointer-events:none}
+.lens-edge{position:absolute;inset:12px;border-radius:inherit;border:1px solid #ffffff26;mask:linear-gradient(135deg,#000,transparent 45%,#000)}.lens-highlight{position:absolute;left:60px;right:80px;top:21px;height:52px;border-radius:50%;background:linear-gradient(#ffffff4a,#ffffff00);transform:rotate(-8deg)}
+.lab-app{background:#241d3c66;backdrop-filter:blur(24px) saturate(1.5);-webkit-backdrop-filter:blur(24px) saturate(1.5);border:1px solid #ffffff50;box-shadow:0 16px 34px #110b323d,inset 0 1px 0 #ffffff38;border-radius:14px}
+.lab-app.active,.lab-app:hover,.lab-app:focus-visible{background:#42325399;box-shadow:0 20px 40px #110b3255,inset 0 1px 0 #ffffff77;border-color:var(--tool)}
+.lab-geometry{color:#fff;opacity:.65}.lab-lines{opacity:.35}.lab-caption{color:#ded6ed;text-shadow:0 2px 5px #171027}.lab-indicator{background:#fff}#lab-role{border-color:#ffffff55}
+.statement-strip{position:relative;z-index:1;background:#1814208c;border-color:#ffffff20;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.suite-section{position:relative;background:radial-gradient(ellipse at 5% 100%,#7c86c129,transparent 60%)}
+.workspace-story{background:radial-gradient(ellipse at 5% 2%,#d9c2ff,transparent 60%),radial-gradient(ellipse at 100% 100%,#f4b4a7,transparent 50%),#eee7e9}.suite-window{filter:drop-shadow(0 30px 42px #4f285333)}
+.apps-section{background:radial-gradient(ellipse at 95% 60%,#7c86c124,transparent 55%)}.app-preview{background:#2b223b77;border:1px solid #ffffff18;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 25px 55px #0b081d44}
+.feedback-invite{background:radial-gradient(ellipse at 15% 100%,#d85e9f2b,transparent 65%),radial-gradient(ellipse at 95% 0%,#43a6de22,transparent 65%)}
+body:has(.hero-world) .site-footer{background:#15131e}.hero-world a:focus-visible,.hero a:focus-visible{outline-color:#fff;outline-width:3px}
+@media(max-width:1100px){.hero-world{height:930px}}
+@media(max-width:760px){body:has(.hero-world) main{padding-top:82px}.hero{min-height:0}.hero-world{height:1120px}.hero-world>.site-header{min-height:82px}.hero h1{font-size:clamp(54px,8vw,64px)}.hero-copy{padding-bottom:14px}.laboratory{margin-top:4px}.lab-app{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}.hero-copy>p:not(.hero-note){color:#e1dce8}}
+@media(prefers-reduced-motion:reduce){.liquid-lens{transform:rotate(-12deg)!important}.lab-mark{transform:none!important}}
+.hero-world>#liquid-canvas{position:absolute;inset:0;z-index:-1}
+
+#liquid-canvas{opacity:0}
+
+body:has(.hero-world)>.site-header{background:#211b2b38;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-color:#ffffff20}body:has(.hero-world) main{padding-top:0}
+
+/* Native Beta email form; white group with a black adjacent submit button. */
+.beta-native-form{margin-top:28px}.beta-native-form>label{display:block;margin-bottom:10px;font-size:14px;font-weight:600}.email-shell{display:flex;align-items:stretch;gap:6px;padding:6px;background:#fff;border-radius:13px;box-shadow:0 12px 28px #501d1d18}.email-shell:focus-within{outline:3px solid #1b1d20;outline-offset:5px}.email-shell input{flex:1;min-width:0;border:0;background:transparent;color:#1b1d20;padding:13px 12px;font:inherit;caret-color:#1b1d20;border-radius:7px}.email-shell input:focus-visible{outline:2px solid #51545a;outline-offset:-2px}.email-shell input::placeholder{color:#62656b;opacity:1}.email-shell button{display:flex;align-items:center;justify-content:center;gap:12px;border:0;border-radius:8px;padding:14px 18px;background:#111;color:#fff;font:inherit;font-size:14px;font-weight:600;cursor:pointer;white-space:nowrap}.email-shell button svg{width:20px;height:20px}.email-shell button:hover{background:#303030}.email-shell button:focus-visible{outline:3px solid #111;outline-offset:4px}.email-shell button:active{transform:translateY(1px)}.beta-honeypot{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+@media(max-width:450px){.email-shell{gap:3px}.email-shell input{padding:12px 8px;font-size:16px}.email-shell button{padding:13px 10px;font-size:12px;gap:5px}.email-shell button svg{width:15px;height:15px}}
+.beta-entry{min-width:0;width:100%}
