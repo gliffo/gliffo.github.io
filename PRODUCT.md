@@ -1,0 +1,2 @@
+# Gliffo Beta · sito pubblico
+Sito statico GitHub Pages dell’account gliffo. Home essenziale con descrizione Suite già approvata; pagina operativa feedback con modulo Tally jeZYO9 fornito dall’utente, nessun backend proprio e nessun dato privato. Link diretto Tally e email dedicata come recupero. Sorgenti Suite separati e privati. Non dichiara download, prezzi o funzionalità nuove. Nessun account richiesto dal sito wrapper.

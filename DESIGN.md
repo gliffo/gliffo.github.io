@@ -1,0 +1,2 @@
+# Sistema visivo Gliffo esistente
+Sfondo #24262A; testo #F4F4F2; secondario #B9C0CA; corallo #EA5C53; bordi #505761. SVG originali Suite/icona. Font di sistema come nel pannello. Header logo con badge BETA TEST; contenuto max 824 px interni; padding laterale desktop28 mobile20; nessuna animazione decorativa. Modulo Tally su superficie bianca per preservare il contrasto dei controlli gestiti dal fornitore. Footer copyright. Focus corallo. Questa è una pagina feedback e una home temporanea, non un nuovo progetto di identità o la landing completa.
