@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "channel": "Beta",
+  "trialDays": 15,
+  "mac": {
+    "url": "https://gliffo.github.io/downloads/Gliffo%20Suite%20Beta.dmg",
+    "file": "Gliffo Suite Beta.dmg",
+    "sha256": "8fc7cf0d8bf1bf19334844031544adf06cdfdbfd2d5354653c23fa75ca0dc299"
+  },
+  "windows": {
+    "url": "https://gliffo.github.io/downloads/Gliffo%20Suite%20Beta.exe",
+    "file": "Gliffo Suite Beta.exe",
+    "sha256": "27f62dcc0b569bbcf09a77ea62bf01daf733af5f8ae566476ece7fa410dc65bb"
+  }
+}

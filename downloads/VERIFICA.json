@@ -1,0 +1,18 @@
+{
+  "beta": "1.0.0",
+  "trial": {
+    "days": 15,
+    "start": "first-launch",
+    "policy": "suite-beta-1"
+  },
+  "signed_payload_sha256": "54d5819be84c6d9dfa09306efad8194a15163f06ddb7047b8c2dd744d0911544",
+  "mac": "DMG fornito dal titolare; contenuto estratto e verificato, nessuna modifica al DMG; avvio nativo non verificato qui",
+  "windows": "Compilato con NSIS dal medesimo payload firmato; avvio nativo non verificato qui; nessuna firma Authenticode",
+  "installer_title": "Gliffo Suite Beta",
+  "minimum_progress_ms": 2500,
+  "sha256": {
+    "Gliffo Suite Beta.dmg": "8fc7cf0d8bf1bf19334844031544adf06cdfdbfd2d5354653c23fa75ca0dc299",
+    "Gliffo Suite Beta.exe": "27f62dcc0b569bbcf09a77ea62bf01daf733af5f8ae566476ece7fa410dc65bb"
+  },
+  "windows_payload_entries_identical": 57
+}

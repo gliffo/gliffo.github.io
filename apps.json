@@ -1,0 +1,106 @@
+[
+  {
+    "id": "nesso",
+    "name": "Nesso",
+    "color": "#7C86C1",
+    "role": "Proporzioni",
+    "title": "Il giusto rapporto, a colpo d’occhio.",
+    "text": "Trova l’equilibrio tra simbolo e logotipo. Nesso costruisce varianti di proporzione e allineamento su copie del logo, pronte da confrontare.",
+    "points": [
+      "Sezione aurea, equilibrio e rapporto 2:3",
+      "Posizione del simbolo e riferimenti verticali",
+      "Varianti su nuove tavole"
+    ]
+  },
+  {
+    "id": "trama",
+    "name": "Trama",
+    "color": "#40B497",
+    "role": "Costruzione",
+    "title": "Rendi visibile la logica del segno.",
+    "text": "Porta alla luce la geometria del tuo logo con guide di costruzione, contorni, punti e maniglie Bézier.",
+    "points": [
+      "Prolungamenti dei segmenti e contorni",
+      "Punti di ancoraggio e maniglie Bézier",
+      "Stile delle guide personalizzabile"
+    ]
+  },
+  {
+    "id": "modulo",
+    "name": "Modulo",
+    "color": "#E9AD41",
+    "role": "Griglie",
+    "title": "Una struttura per le tue idee.",
+    "text": "Crea griglie geometriche direttamente in Illustrator e parti da una struttura coerente per costruire il tuo progetto.",
+    "points": [
+      "Cinque tipologie di griglia",
+      "Dimensioni, moduli e inclinazione",
+      "Controllo visivo dello stile delle guide"
+    ]
+  },
+  {
+    "id": "tono",
+    "name": "Tono",
+    "color": "#D85E9F",
+    "role": "Colore",
+    "title": "Trova i colori. Tieni quelli giusti.",
+    "text": "Esplora armonie e composizioni cromatiche, blocca i colori da conservare e costruisci la palette del brand.",
+    "points": [
+      "Armonie, ispirazione e composizione",
+      "Più colori dalla selezione, già bloccati",
+      "Palette trasferibile a Scena"
+    ]
+  },
+  {
+    "id": "tipo",
+    "name": "Tipo",
+    "color": "#B7D050",
+    "role": "Tipografia",
+    "title": "Dai ai caratteri lo spazio che meritano.",
+    "text": "Confronta i font installati e crea campionari tipografici con la tua frase, accenti e simboli.",
+    "points": [
+      "Famiglie e stili disponibili in Illustrator",
+      "Campionario su nuova tavola o documento",
+      "Font scelto trasferibile a Scena"
+    ]
+  },
+  {
+    "id": "soglia",
+    "name": "Soglia",
+    "color": "#EC682D",
+    "role": "Leggibilità",
+    "title": "Un buon logo regge anche in piccolo.",
+    "text": "Metti alla prova il segno alle piccole dimensioni, su fondi chiari e scuri e nelle applicazioni per stampa e digitale.",
+    "points": [
+      "Prove per stampa e schermo",
+      "Fondi chiari, scuri e varianti negative",
+      "Confronti su copie del logo"
+    ]
+  },
+  {
+    "id": "capsula",
+    "name": "Capsula",
+    "color": "#43A6DE",
+    "role": "Consegna",
+    "title": "Tutti gli asset. Un pacchetto ordinato.",
+    "text": "Prepara i file del brand in una nuova cartella, nei formati e nelle dimensioni che ti servono per la consegna.",
+    "points": [
+      "SVG, PDF, PNG, AI, EPS e JPG",
+      "Dimensioni raster e sfondo trasparente",
+      "Conversione dei testi nelle copie"
+    ]
+  },
+  {
+    "id": "scena",
+    "name": "Scena",
+    "color": "#E7DCC8",
+    "role": "Presentazione",
+    "title": "Il tuo brand, pronto a entrare in scena.",
+    "text": "L’identità è già progettata. Scena la trasforma in una presentazione editoriale con logo, colori, tipografia, pattern e mockup.",
+    "points": [
+      "Logo completo e icona associati separatamente",
+      "Fino a sei mockup in un layout masonry",
+      "Tavole e testi modificabili in Illustrator"
+    ]
+  }
+]

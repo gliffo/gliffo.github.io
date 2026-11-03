@@ -1,30 +1,36 @@
 # Gliffo · sito pubblico Beta
 
-Sito statico gratuito GitHub Pages. Contiene soltanto pagine pubbliche e SVG originali: nessun sorgente della Suite, certificato, account o dato dei tester.
+Sito statico GitHub Pages già attivo da `main`, cartella radice. Home «Laboratorio vettoriale» con catalogo di otto app e download Beta; pagina feedback operativa separata. Nessun backend proprio, sorgente Suite o certificato privato pubblicato.
 
 - Home: https://gliffo.github.io/
 - Feedback: https://gliffo.github.io/feedback/
-- Modulo Tally fornito dall’autore: https://tally.so/r/jeZYO9
-- Email del progetto: gliffosuite@gmail.com
+- Tally fornito dal titolare: https://tally.so/r/jeZYO9
+- Email: gliffosuite@gmail.com
 
-## Attivare GitHub Pages
+## Home e risorse
 
-Repository Settings → Pages → Build and deployment → Deploy from a branch → main → / (root) → Save. L’attivazione richiede l’amministrazione della repository, non disponibile nel connettore GitHub corrente. Dopo il deploy GitHub mostra l’URL pubblico. Non è necessario un dominio acquistato.
+`index.html`, `landing.css` e `landing.js` implementano la home; `apps.json` descrive il catalogo. `styles.css` e `feedback/` conservano il sistema operativo del modulo. Il merge documentale non autorizza modifiche visive implicite al feedback. Direzione e confini: `.impeccable/briefs/home.md`; token effettivi: `DESIGN.md`, estensioni e componenti: `.impeccable/design.json`.
 
-Il modulo Tally rimane nel piano gratuito e conserva il marchio Tally. Le modifiche ai campi si fanno in Tally e appaiono anche qui. Attivare in Tally Settings → Email notifications → Self email notifications per ricevere avvisi all’email dell’account. Non sono state cambiate impostazioni o inviate email da Codex.
+SVG originali e screenshot correnti della Beta in `assets/`. Le immagini mostrano UI HTML reale con CEP simulato e dati dimostrativi: non sono catture native Illustrator. Provenienza in `assets/PROVENIENZA.md`. Bricolage Grotesque è locale, con licenza SIL OFL in `assets/fonts/Bricolage-OFL.txt`.
 
-L’embed usa lo script ufficiale Tally per l’altezza dinamica; il link diretto funziona anche se lo script o l’incorporamento sono bloccati. App/version/os/illustrator possono passare come parametri; per registrarli nel modulo bisogna aggiungere i relativi campi nascosti in Tally. Non viene promesso il popolamento di campi non configurati.
+## Installer Beta 1.0.0
 
-## Verifica prima dei tester
+I pacchetti correnti sono `downloads/Gliffo Suite Beta.dmg` e `downloads/Gliffo Suite Beta.exe`; `downloads.json` contiene URL pubblici e SHA-256. La home contiene link HTML statici ai due installer, con versione e istruzioni corrette: i download funzionano anche senza JavaScript. Non esiste fetch runtime di downloads.json; il manifest conserva URL e hash. Non usare vecchi archivi o ZIP sorgente come installer.
 
-L’ambiente cloud non raggiunge tally.so: il proxy rifiuta la connessione. Il link è quello fornito dall’autore; non è stata verificata la struttura effettiva del modulo né inviata una risposta di prova. Dal browser normale aprire /feedback/, controllare il modulo su desktop/mobile e inviare una segnalazione identificata come prova; verificare che arrivi nell’account Tally corretto. Non attivare richieste di accesso per i tester.
+Il DMG è fornito dal titolare, estratto e controllato senza modificarlo. L’EXE è compilato con NSIS dal medesimo ZXP con firma Adobe verificata; il rapporto conferma che le 57 voci ZXP estratte dall’EXE sono identiche byte per byte al payload verificato. `downloads/VERIFICA.json` registra hash, payload, prova di 15 giorni dal primo avvio e progressione minima di 2500 ms. Non è stata verificata l’esecuzione nativa qui; firme OS degli installer assenti (nessuna Authenticode Windows). La verifica della firma Adobe riguarda il payload, non una firma OS degli installer.
 
-## Altezza e caricamento del modulo
+Chiudere Illustrator prima dell’installazione; poi Finestra → Estensioni → Gliffo Suite PRO. Requisito dichiarato: Illustrator 2024 o successivo. Dopo 15 giorni gli strumenti Beta vengono disattivati; file e salvataggio progetto dalla home Suite restano disponibili.
 
-L’utente ha scelto un solo scroll della pagina esterna con modulo intero. Il codice originale fornito dall’utente contiene alignLeft=1, hideTitle=1, transparentBackground=1, altezza iniziale1354 e bootstrap ufficiale Tally; non contiene dynamicHeight=1. L’integrazione conserva tali opzioni e aggiunge dynamicHeight=1 per ridimensionare il contenuto. La misura1354 rimane un attributo iniziale, mai un’altezza CSS fissa.
+## Tally: configurazione e funzionamento
 
-Il bootstrap segue lo snippet ufficiale con loadEmbeds e recupero nativo onload/onerror. È incorporato nell’HTML per evitare una vecchia versione di JS in cache; non ci sono watchdog personalizzati. La pagina non contiene contenitori con altezza massima o overflow nascosto. Il form trasparente poggia sul fondo Gliffo scuro, coerente con il tema configurato dall’utente in Tally. Lo scroll interno viene soppresso solo quando il fornitore modifica l’altezza; senza SDK rimane disponibile per non rendere i campi irraggiungibili. Il link diretto sopra il modulo e il fallback noscript restano presenti.
+L’utente ha confermato che il feedback è corretto e gli invii funzionano. Le notifiche email non sono state verificate o modificate da Codex: in Tally Settings → Email notifications → Self email notifications si gestiscono gli avvisi all’email dell’account. Il modulo gratuito conserva il marchio Tally; i campi si modificano nel relativo editor. Il sito non richiede un account ai tester.
 
-Documentazione ufficiale: https://developers.tally.so/widgets/embeds e https://tally.so/help/embed-your-form. `node tests/embed.cjs` verifica opzioni del codice fornito, ridimensionamento2600 e riduzione900, assenza di soppressione prematura dello scroll, SDK fallito e caricamento inline. SDK simulato: il test non prova il rendering Tally reale. Il modulo diretto è confermato funzionante dall’utente; l’embed non è raggiungibile dai tool browser di questo ambiente.
+Lo snippet fornito usa `alignLeft=1`, `hideTitle=1`, `transparentBackground=1`, altezza iniziale 1354 e bootstrap ufficiale. L’integrazione aggiunge `dynamicHeight=1`; 1354 è una dimensione iniziale, senza altezza CSS fissa o clipping del contenitore. Lo scroll interno viene soppresso dopo una modifica di altezza da parte del fornitore; senza SDK resta disponibile. Link diretto sopra il modulo, recupero nativo e noscript restano presenti; nessun watchdog personalizzato.
 
-Colori Tally: sfondo #24262A; testo #F4F4F2; testo secondario #B9C0CA; pulsante #EA5C53; testo pulsante #1B1D20; campi #363B42; bordi #505761. La guida non modifica il tema del modulo.
+I parametri `app`, `version`, `os`, `illustrator` sono inoltrati; Tally deve avere i relativi campi nascosti configurati per registrarli. Non viene promesso il popolamento di campi non configurati. Tema: sfondo #24262A, testo #F4F4F2, secondario #B9C0CA, pulsante #EA5C53, testo pulsante #1B1D20, campi #363B42, bordi #505761. Questa guida non modifica automaticamente il tema Tally.
+
+Documentazione ufficiale: https://developers.tally.so/widgets/embeds e https://tally.so/help/embed-your-form.
+
+## Verifica
+
+`node tests/embed.cjs` copre l’integrazione Tally con SDK simulato: opzioni, altezze 2600/900px, scroll e fallback; non verifica invii o rendering live. I limiti browser/proxy del precedente lavoro Tally non annullano la conferma d’uso fornita dall’utente. Per la nuova home sono disponibili catture HTML desktop 1440 e mobile 390 nella review locale; la revisione finale ha confermato risolti tutti e tre i rilievi e ha dato esito favorevole alla pubblicazione nell’ambito della lista di correzioni. Questo esito non estende le verifiche all’esecuzione nativa degli installer. Verificare su OS reali gli installer resta un controllo distinto dalle prove statiche e dal payload firmato.
