@@ -56,3 +56,11 @@ Il modulo Beta Tally è sostituito dal form HTML in index.html. Il modulo POST p
 Attivazione necessaria: aprire il sito pubblico, inviare una volta la propria email, aprire nella casella gliffosuite@gmail.com il messaggio FormSubmit e confermare Activate Form. Ripetere un invio per verificare ricezione e ritorno ai download. La prima conferma e l’invio reale non sono stati eseguiti qui. I test browser intercettano il POST, verificano campi e validazione e restituiscono una risposta simulata; non inviano email.
 
 Documentazione del servizio: https://formsubmit.co/documentation e https://formsubmit.co/help. Feedback Tally separato e installer invariati.
+
+## Guasto FormSubmit e migrazione Formspree
+
+Il titolare ha riscontrato HTTP522. beta-email.js ora intercetta l’invio e non porta il visitatore alla pagina di errore del provider; mostra errore/retry e conserva il campo email. Il guasto remoto non è risolto da questo codice. Timeout12s; nessun accesso ai download prima della conferma esplicita.
+
+Per collegare Formspree dopo aver creato il modulo nell’account del titolare: `python3 scripts/configure-formspree.py https://formspree.io/f/ENDPOINT_REALE`. Il comando modifica l’action e rimuove opzioni specifiche del vecchio provider, senza inviare messaggi o pubblicare. Il redirect dopo successo AJAX resta /beta/download/. Il piano gratuito Formspree verificato consente50invii/mese. Endpoint e ricezione reale ancora da verificare.
+
+`node tests/beta-email.cjs` verifica522, rete, timeout, falso successo booleano/stringa,429,JSONerrato,doppiinvii e successo confermato. Browser1440/390 con risposte provider intercettate: errore preservaemail e retryapre download soltanto dopo conferma simulata. Nessunaemailrealeinviata.

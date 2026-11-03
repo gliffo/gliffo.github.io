@@ -19,3 +19,7 @@ Il feedback resta sul modulo Tally jeZYO9. Il vecchio modulo Beta Tally 2jXzv9 n
 ## Direzione visiva richiesta dall’utente
 
 La home conserva il laboratorio vettoriale e i marchi originali, reinterpretati con sfumature colorate, sfondo liquido interattivo WebGL e superfici in vetro. La richiesta esplicita sostituisce il precedente trattamento a piani piatti. Percorso Tally, raccolta email e installer restano invariati.
+
+## Errore provider e sostituzione in preparazione
+
+L’utente ha riscontrato HTTP522 su FormSubmit. Ora beta-email.js gestisce l’invio nel sito: stato in corso, timeout12s, erroriHTTP/rete/JSON/attivazione, valore email preservato e retry. Solo conferma esplicita del provider apre i download. Nessun invio reale verificato. Formspree è supportato dal codice; il vero endpoint dell’account dell’autore è stato richiesto e non è ancora disponibile. Il form continua temporaneamente a puntare a FormSubmit: la gestione errori non ripristina il servizio remoto.
