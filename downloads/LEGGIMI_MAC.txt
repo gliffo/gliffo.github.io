@@ -1,0 +1,97 @@
+GLIFFO SUITE BETA
+Guida all’installazione su Mac
+
+DURATA DELLA BETA
+La prova dura 15 giorni dal primo avvio della Suite in Illustrator.
+I giorni rimanenti sono visibili nella Suite. Reinstallare non rinnova
+la prova. Alla scadenza gli strumenti si bloccano, ma i progetti salvati
+restano conservati e puoi ancora salvarli dalla home.
+
+COSA SERVE
+Adobe Illustrator 2024 o successivo, già installato sul Mac.
+
+INSTALLAZIONE
+1. Chiudi Adobe Illustrator.
+2. Fai doppio clic sul file Gliffo Suite Beta.dmg.
+   Se hai già aperto questa guida dal disco Gliffo, prosegui dal punto 3.
+3. Fai doppio clic su “Gliffo Suite Beta.app”, riconoscibile
+   dall’icona con la g di Gliffo.
+4. Nella finestra che compare, scegli “Installa”.
+5. Attendi il messaggio di installazione completata e premi “OK”.
+6. Apri Illustrator. Nel menu Finestra scegli Estensioni
+   (oppure Estensioni legacy, secondo la versione) → Gliffo Suite PRO.
+7. Nella Suite, fai clic su uno strumento per aprire la sua finestra.
+
+Non trascinare l’app nella cartella Applicazioni: è il programma
+che installa la Suite dentro Illustrator.
+
+SE macOS BLOCCA L’APERTURA
+Questa Beta non è ancora firmata con Developer ID e notarizzata da Apple.
+La firma Adobe dello ZXP non sostituisce la verifica Apple dell’installer.
+
+Se compare “Apple non può verificare la presenza di malware” oppure
+un avviso di sviluppatore non verificato:
+1. Controlla di aver scaricato il file dal sito ufficiale:
+   https://gliffo.github.io/
+   Prosegui solo se riconosci il file e intendi autorizzarne l’apertura.
+2. Prova ad aprire “Gliffo Suite Beta.app” dentro il DMG.
+   Chiudi l’avviso con “Fine”, “OK” o “Annulla”, secondo la versione.
+3. Apri il menu Apple → Impostazioni di Sistema → Privacy e sicurezza.
+4. Scorri fino alla sezione Sicurezza. Cerca l’avviso relativo
+   a Gliffo Suite Beta e premi “Apri comunque”.
+5. Autorizza con Touch ID o la password del Mac, se richiesto,
+   e conferma “Apri” nella successiva finestra.
+6. Nell’installer scegli “Installa”, poi riprendi la guida dal punto 5
+   della sezione INSTALLAZIONE.
+
+Il pulsante “Apri comunque” compare dopo il tentativo di apertura
+ed è disponibile per circa un’ora. Se non lo trovi, riprova ad aprire
+l’app, poi torna in Privacy e sicurezza. Sui Mac gestiti da un’azienda
+può essere necessaria l’autorizzazione dell’amministratore.
+Sulle versioni precedenti, la voce si trova in Preferenze di Sistema
+→ Sicurezza e Privacy → Generali.
+
+Questi passaggi autorizzano il singolo installer: non richiedono
+Terminale, disattivazione di Gatekeeper o rimozione della quarantena.
+
+Se il messaggio indica che il file “danneggerà il computer”, contiene
+malware oppure “è danneggiato”, non forzare l’apertura. Annota l’avviso
+e contattaci dal modulo feedback. Se il download risulta incompleto,
+scaricalo nuovamente dal sito ufficiale.
+
+DOPO L’INSTALLAZIONE
+Puoi espellere il disco Gliffo dal Finder. La Suite rimane installata.
+Conserva il file DMG: servirà anche per disinstallarla.
+
+AGGIORNAMENTO
+Chiudi Illustrator, riapri l’app nel nuovo DMG e scegli “Installa”.
+La copia della Suite installata per il tuo utente viene sostituita.
+I progetti salvati restano conservati.
+
+Se compare un messaggio relativo a una precedente installazione
+per tutti gli utenti, rimuovi quella copia con il suo precedente
+installer e poi ripeti l’installazione.
+
+DISINSTALLAZIONE
+1. Chiudi Illustrator.
+2. Riapri il DMG e fai doppio clic su “Gliffo Suite Beta.app”.
+3. Scegli “Disinstalla” e attendi il messaggio di conferma.
+I progetti salvati non vengono eliminati.
+
+SE QUALCOSA NON FUNZIONA
+• La Suite non compare? Chiudi e riapri Illustrator, poi verifica
+  di usare Illustrator 2024 o successivo.
+• L’app chiede di chiudere Illustrator? Esci con Illustrator →
+  Esci da Illustrator: chiudere soltanto il documento non basta.
+• macOS impedisce l’apertura? Segui la sezione
+  “SE macOS BLOCCA L’APERTURA” qui sopra.
+• Per segnalare un errore, indica versione macOS, versione Illustrator,
+  strumento usato e passaggi per riprodurlo. Allega, se possibile,
+  uno screenshot del messaggio.
+
+Grazie per provare la Beta di Gliffo Suite PRO.
+© 2026 gliffo. Tutti i diritti riservati.
+
+FEEDBACK
+https://gliffo.github.io/feedback/
+Puoi segnalare un bug o un suggerimento senza creare un account.

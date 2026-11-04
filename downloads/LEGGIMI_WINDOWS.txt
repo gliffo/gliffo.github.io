@@ -1,0 +1,42 @@
+GLIFFO SUITE BETA — INSTALLAZIONE WINDOWS
+
+1. Chiudi Adobe Illustrator.
+2. Esegui Gliffo Suite Beta.exe.
+3. Apri Illustrator 2024 o successivo: Finestra → Estensioni → Gliffo Suite PRO.
+
+SE WINDOWS MOSTRA UN AVVISO
+L’installer Beta non ha ancora una firma Authenticode Windows.
+La firma Adobe dello ZXP riguarda l’estensione, non il file EXE.
+
+Se SmartScreen mostra “PC protetto da Windows”:
+1. Verifica di aver scaricato “Gliffo Suite Beta.exe” dal sito ufficiale:
+   https://gliffo.github.io/
+   Prosegui solo se riconosci il file e intendi autorizzarne l’avvio.
+2. Premi “Ulteriori informazioni”.
+3. Controlla il nome del file. L’autore può risultare “Sconosciuto”.
+4. Se disponibile, premi “Esegui comunque” e segui l’installer.
+
+Se “Esegui comunque” non è disponibile, il computer può applicare
+criteri aziendali o Smart App Control: contatta l’amministratore
+o il supporto Gliffo. Non disattivare SmartScreen, Smart App Control
+o l’antivirus. Un avviso di malware di Microsoft Defender è diverso
+dall’avviso di reputazione: in quel caso non forzare l’esecuzione.
+
+Se il browser blocca il download, conserva il messaggio e contattaci:
+le istruzioni sopra riguardano solo l’avvio del file già scaricato.
+
+Installazione per il tuo utente, senza privilegi amministratore. Non viene attivata la modalità sviluppatore di Adobe. I progetti salvati non vengono modificati. Per aggiornare un’installazione di tutti gli utenti, rimuovi prima la vecchia copia con il precedente installer.
+
+Disinstallazione: Impostazioni Windows → App → Gliffo Suite PRO Beta. Rimuove soltanto questa estensione e il suo programma di disinstallazione. I progetti restano conservati.
+
+L’EXE è compilato con NSIS, open source. Il programma non richiede un installer di terzi e non scarica codice durante l’installazione. PowerShell deve essere disponibile per controllare che Illustrator sia chiuso.
+
+STATO: compilato e verificato strutturalmente in Linux, non ancora eseguito e collaudato su Windows/Illustrator. Lo ZXP originale ha una firma Adobe; l’EXE non ha ancora una firma Authenticode Windows e può mostrare un avviso di editore sconosciuto/SmartScreen. Non disattivare le protezioni del sistema. Per la distribuzione pubblica firmare e collaudare prima l’EXE e il programma di disinstallazione. Per i tester resta disponibile lo ZXP originale con l’installer aescripts ufficiale: https://aescripts.com/learn/zxp-installer/
+
+La Beta 1.0.0 dura 15 giorni dal primo avvio della Suite. Il conteggio
+locale resta conservato anche dopo la reinstallazione. Alla scadenza
+gli strumenti si bloccano; i progetti salvati non vengono eliminati.
+
+FEEDBACK
+https://gliffo.github.io/feedback/
+Puoi segnalare un bug o un suggerimento senza creare un account.
