@@ -71,3 +71,8 @@ WebP lossless, risoluzione originale e identità RGB verificata rispetto ai PNG;
 
 
 Aggiornamento: ricevuto tipo e soglia.zip. Tutte le otto app ora mostrano catture native fornite dall’autore: campionario Fixel Variable per Tipo e tavola di riduzione Onda per Soglia. Rimosse le due anteprime demo HTML dalla home. WebP lossless, pixel identici ai PNG, cattura completa disponibile.
+
+
+## Slideshow delle catture native
+
+La sezione Dentro Illustrator usa ora una galleria manuale con otto selettori-logo, frecce cicliche, contatore, tasti sinistra/destra e gesture touch orizzontali. Nessun autoplay. Frame stabile con object-fit contain, immagini originali senza tagli; Ingrandisci segue la slide selezionata. I caricamenti conservano l’immagine precedente fino al successo, gestiscono errore/retry e scartano risposte superate. Nessuna nuova immagine o modifica ai download. Senza JavaScript rimangono Tono e otto link diretti. Verificati desktop1440/mobile390, selezione di tutte le app, ciclo, tastiera, richieste rapide, focus dopo zoom, altezza stabile e assenza di overflow/errori.
