@@ -189,3 +189,8 @@ Questi esempi sono costruzioni editoriali per spiegare le funzioni, NON esportaz
 ## Assistenza nella pagina download
 
 /beta/download/ mostra un avviso visibile sullo stato delle firme degli installer e quattro FAQ native details/summary: autorizzazione macOS per sviluppatore non verificato, SmartScreen Windows, Suite assente dal menu e uscita completa da Illustrator. Distinti gli avvisi malware/file danneggiato, per cui non si invita a forzare l’apertura. Link feedback e due LEGGIMI conservati. CSS limitato alla route in beta/download/help.css. Verificati 1440/390px senza JavaScript, tastiera e assenza di overflow; nessuna esecuzione nativa installer o modifica ai binari.
+
+
+## Impaginazione download per piattaforma
+
+Pagina /beta/download/ riorganizzata in una superficie chiara per download e primi passi, seguita da assistenza scura. Due colonne Mac/Windows su desktop, una su mobile; ciascuna con pulsante, tre passaggi e LEGGIMI. Percorso di apertura Illustrator separato e visibile. FAQ raggruppate Mac/Windows/Illustrator, collegamenti diretti con apertura e focus al summary; risposte già approvate conservate. Nessun rilevamento OS, invio dati o download automatico. helper JS opzionale, details nativi funzionano senza JS. CSS limitato a help.css. Verificati 1440/768/390px, no overflow o errori JS, navigazione/focus/tastiera e fallback senza JS. Link e hash installer invariati.
