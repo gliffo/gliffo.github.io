@@ -6,13 +6,14 @@
  function open(trigger,source,label){
   if(!source){return;}
   if(typeof dialog.showModal!=='function'){window.open(source,'_blank','noopener,noreferrer');return;}
-  lastTrigger=trigger;image.src=source;image.alt=label;title.textContent=label;file.href=source;
+  lastTrigger=trigger;image.src=source;image.alt=label;title.textContent=label;file.href=source;dialog.querySelector('.screenshot-note').textContent=source.indexOf('/assets/onda/')!==-1?'Cattura fornita dall’autore. Onda è un progetto dimostrativo.':'Interfaccia HTML della Beta con dati dimostrativi; non è una cattura nativa di Illustrator.';
   previousOverflow=document.documentElement.style.overflow;document.documentElement.style.overflow='hidden';
   dialog.showModal();dialog.querySelector('.screenshot-scroll').scrollTop=0;
  }
  var appButton=document.getElementById('preview-zoom'),suiteButton=document.getElementById('suite-zoom');
  if(appButton){appButton.addEventListener('click',function(){var current=document.getElementById('app-screenshot');open(appButton,current.currentSrc||current.src,current.alt);});}
- if(suiteButton){suiteButton.addEventListener('click',function(){var current=document.querySelector('.suite-window img');open(suiteButton,current.currentSrc||current.src,'Presentazione del brand — esempio illustrativo');});}
+ if(suiteButton){suiteButton.addEventListener('click',function(){var current=document.querySelector('.suite-window img');open(suiteButton,current.currentSrc||current.src,'Onda: la presentazione di Scena dentro Illustrator');});}
+ document.querySelectorAll('[data-open-shot]').forEach(function(button){button.addEventListener('click',function(){open(button,button.dataset.openShot,button.dataset.shotTitle);});});
  dialog.querySelector('[data-close-screenshot]').addEventListener('click',function(){dialog.close();});
  dialog.addEventListener('click',function(event){if(event.target!==dialog){return;}var r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom){dialog.close();}});
  dialog.addEventListener('close',function(){document.documentElement.style.overflow=previousOverflow;image.removeAttribute('src');if(lastTrigger){lastTrigger.focus({preventScroll:true});}});

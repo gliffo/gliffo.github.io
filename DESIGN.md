@@ -194,3 +194,10 @@ Questi esempi sono costruzioni editoriali per spiegare le funzioni, NON esportaz
 ## Impaginazione download per piattaforma
 
 Pagina /beta/download/ riorganizzata in una superficie chiara per download e primi passi, seguita da assistenza scura. Due colonne Mac/Windows su desktop, una su mobile; ciascuna con pulsante, tre passaggi e LEGGIMI. Percorso di apertura Illustrator separato e visibile. FAQ raggruppate Mac/Windows/Illustrator, collegamenti diretti con apertura e focus al summary; risposte già approvate conservate. Nessun rilevamento OS, invio dati o download automatico. helper JS opzionale, details nativi funzionano senza JS. CSS limitato a help.css. Verificati 1440/768/390px, no overflow o errori JS, navigazione/focus/tastiera e fallback senza JS. Link e hash installer invariati.
+
+
+## Caso reale Onda — immagini fornite dall’autore
+
+Sostituiti gli esempi SVG Gliffo per Nesso, Trama, Modulo, Tono, Capsula e Scena con sei catture reali fornite in Archivio.zip. Scena apre il racconto; le app hanno piccoli loghi come firma, il risultato domina. Ritagli solo CSS, apertura della cattura completa, nessun ritocco dei pixel. Tono appare anche in una sezione ampia nel contesto nativo di Illustrator. Capsula mostra la cartella dei file esportati; esclusa la cattura con percorso personale. Tipo e Soglia restano interfacce HTML con dati dimostrativi, etichettate come tali nel contenuto e nel dialogo.
+
+WebP lossless, risoluzione originale e identità RGB verificata rispetto ai PNG; totale circa1,87MB per sei risorse, caricamento lazy. Verificati 1440/390px: otto loghi, selezione, ritagli desktop/mobile, apertura/focus/chiusura dialogo, distinzione nativo/demo, nessun overflow o errore JS. Modulo email e marker Gmail preservati; download/feedback non modificati. Provenienza dettagliata in assets/onda/PROVENIENZA.md.
