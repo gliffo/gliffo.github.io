@@ -209,3 +209,10 @@ Aggiornamento: ricevuto tipo e soglia.zip. Tutte le otto app ora mostrano cattur
 ## Slideshow delle catture native
 
 La sezione Dentro Illustrator usa ora una galleria manuale con otto selettori-logo, frecce cicliche, contatore, tasti sinistra/destra e gesture touch orizzontali. Nessun autoplay. Frame stabile con object-fit contain, immagini originali senza tagli; Ingrandisci segue la slide selezionata. I caricamenti conservano l’immagine precedente fino al successo, gestiscono errore/retry e scartano risposte superate. Nessuna nuova immagine o modifica ai download. Senza JavaScript rimangono Tono e otto link diretti. Verificati desktop1440/mobile390, selezione di tutte le app, ciclo, tastiera, richieste rapide, focus dopo zoom, altezza stabile e assenza di overflow/errori.
+
+
+## Header — bordi ad alta definizione e orbita rifrangente
+
+La sagoma WebGL della g ora deriva da un campo di distanza a 16 bit in assets/gliffo-distance.png, calcolato dallo SVG originale con padding; copertura antialias analitica e normalità smussate sostituiscono le vecchie soglie alpha. Il canvas usa fino a2×DPR, con budget5,4Mpdesktop/1,8Mpmobile e riduzione adattiva della risoluzione dopo frame lenti. Test Retina: canvas2823px per viewport1440 (scala1,96) e780px per390 (2,00). Nessun benchmark su dispositivo fisico dichiarato.
+
+Direzione amplificata: g con bevel e metallo iridescente, orbita spessa con arco davanti/dietro, lente che ingrandisce/deforma la sagoma e riflessi, increspatura al pointerdown nello spazio libero, sfondo con caustiche, titolo più pesante e campitura acida inclinata. Testi e CTA rimangono HTML. Movimento ridotto statico; pausa offscreen/tab nascosta e SVG/CSS senza WebGL conservati. Verificati shader animato, risposta del puntatore, fallback, due viewport Retina senza overflow/errori e navigazione app/email preservata.

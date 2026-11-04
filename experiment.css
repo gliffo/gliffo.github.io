@@ -23,3 +23,9 @@ body:has(.hero-world)>.site-header{background:transparent;backdrop-filter:none;-
 @media(prefers-reduced-motion:reduce){.orbital-tracks,.lab-app,.hero h1>span{transition:none!important}.lab-app:hover,.lab-app.active{translate:none}.hero h1>span{transform:rotate(-4deg)}}
 
 @media(max-width:760px){.laboratory{margin:20px 0 0;width:100%}.lab-app-scena{left:0}.hero{overflow:clip}}
+
+/* Bolder sculpture: light, orbit and pointer share one scene. */
+.hero-world{background:radial-gradient(ellipse at 78% 38%,#7630c4 0,transparent 50%),radial-gradient(ellipse at 90% 78%,#ff6542 0,transparent 44%),#0c0913!important}.orbital-tracks{opacity:.36;stroke-width:.8}.orbital-tracks ellipse:first-child{stroke-dasharray:120 15 3 15;stroke-width:1}.lab-geometry{opacity:.16}.hero h1{font-weight:800}.hero h1>span{box-shadow:10px 18px 38px #06040d60;transform:rotate(-5deg) skewX(-3deg);padding-right:18px}.hero-actions .primary{box-shadow:8px 14px 30px #05030c50}.lab-app{backdrop-filter:blur(22px) saturate(1.7);-webkit-backdrop-filter:blur(22px) saturate(1.7)}.lab-caption{color:#ece6f5}
+@media(min-width:1100px) and (prefers-reduced-motion:no-preference){.orbital-tracks{animation:orbit-breathe 12s ease-in-out infinite alternate}@keyframes orbit-breathe{from{transform:rotate(-5deg) scale(.97)}to{transform:rotate(7deg) scale(1.035)}}}
+@media(max-width:760px){.hero h1>span{transform:rotate(-4deg) skewX(-2deg)}}
+@media(prefers-reduced-motion:reduce){.orbital-tracks{animation:none!important}}
