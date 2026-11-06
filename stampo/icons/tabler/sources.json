@@ -1,0 +1,146 @@
+[
+  {
+    "name": "heart",
+    "label": "Cuore",
+    "category": "Generici",
+    "catalog": "https://allsvgicons.com/pack/tabler/#heart",
+    "source": "https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/outline/heart.svg",
+    "license": "MIT",
+    "file": "heart.svg"
+  },
+  {
+    "name": "star",
+    "label": "Stella",
+    "category": "Generici",
+    "catalog": "https://allsvgicons.com/pack/tabler/#star",
+    "source": "https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/outline/star.svg",
+    "license": "MIT",
+    "file": "star.svg"
+  },
+  {
+    "name": "diamond",
+    "label": "Diamante",
+    "category": "Generici",
+    "catalog": "https://allsvgicons.com/pack/tabler/#diamond",
+    "source": "https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/outline/diamond.svg",
+    "license": "MIT",
+    "file": "diamond.svg"
+  },
+  {
+    "name": "infinity",
+    "label": "Infinito",
+    "category": "Generici",
+    "catalog": "https://allsvgicons.com/pack/tabler/#infinity",
+    "source": "https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/outline/infinity.svg",
+    "license": "MIT",
+    "file": "infinity.svg"
+  },
+  {
+    "name": "leaf",
+    "label": "Foglia",
+    "category": "Natura",
+    "catalog": "https://allsvgicons.com/pack/tabler/#leaf",
+    "source": "https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/outline/leaf.svg",
+    "license": "MIT",
+    "file": "leaf.svg"
+  },
+  {
+    "name": "flower",
+    "label": "Fiore",
+    "category": "Natura",
+    "catalog": "https://allsvgicons.com/pack/tabler/#flower",
+    "source": "https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/outline/flower.svg",
+    "license": "MIT",
+    "file": "flower.svg"
+  },
+  {
+    "name": "tree",
+    "label": "Albero",
+    "category": "Natura",
+    "catalog": "https://allsvgicons.com/pack/tabler/#tree",
+    "source": "https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/outline/tree.svg",
+    "license": "MIT",
+    "file": "tree.svg"
+  },
+  {
+    "name": "sun",
+    "label": "Sole",
+    "category": "Natura",
+    "catalog": "https://allsvgicons.com/pack/tabler/#sun",
+    "source": "https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/outline/sun.svg",
+    "license": "MIT",
+    "file": "sun.svg"
+  },
+  {
+    "name": "briefcase-2",
+    "label": "Borsa",
+    "category": "Pelletteria / artigianato",
+    "catalog": "https://allsvgicons.com/pack/tabler/#briefcase-2",
+    "source": "https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/outline/briefcase-2.svg",
+    "license": "MIT",
+    "file": "briefcase-2.svg"
+  },
+  {
+    "name": "hammer",
+    "label": "Martello",
+    "category": "Pelletteria / artigianato",
+    "catalog": "https://allsvgicons.com/pack/tabler/#hammer",
+    "source": "https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/outline/hammer.svg",
+    "license": "MIT",
+    "file": "hammer.svg"
+  },
+  {
+    "name": "ruler-measure",
+    "label": "Righello",
+    "category": "Pelletteria / artigianato",
+    "catalog": "https://allsvgicons.com/pack/tabler/#ruler-measure",
+    "source": "https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/outline/ruler-measure.svg",
+    "license": "MIT",
+    "file": "ruler-measure.svg"
+  },
+  {
+    "name": "tool",
+    "label": "Attrezzo",
+    "category": "Pelletteria / artigianato",
+    "catalog": "https://allsvgicons.com/pack/tabler/#tool",
+    "source": "https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/outline/tool.svg",
+    "license": "MIT",
+    "file": "tool.svg"
+  },
+  {
+    "name": "needle",
+    "label": "Ago",
+    "category": "Cucito",
+    "catalog": "https://allsvgicons.com/pack/tabler/#needle",
+    "source": "https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/outline/needle.svg",
+    "license": "MIT",
+    "file": "needle.svg"
+  },
+  {
+    "name": "needle-thread",
+    "label": "Ago e filo",
+    "category": "Cucito",
+    "catalog": "https://allsvgicons.com/pack/tabler/#needle-thread",
+    "source": "https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/outline/needle-thread.svg",
+    "license": "MIT",
+    "file": "needle-thread.svg"
+  },
+  {
+    "name": "scissors",
+    "label": "Forbici",
+    "category": "Cucito",
+    "catalog": "https://allsvgicons.com/pack/tabler/#scissors",
+    "source": "https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/outline/scissors.svg",
+    "license": "MIT",
+    "file": "scissors.svg"
+  },
+  {
+    "name": "hanger",
+    "label": "Gruccia",
+    "category": "Cucito",
+    "catalog": "https://allsvgicons.com/pack/tabler/#hanger",
+    "source": "https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/outline/hanger.svg",
+    "license": "MIT",
+    "file": "hanger.svg"
+  }
+]
