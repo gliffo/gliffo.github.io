@@ -1,0 +1,9 @@
+/* Language is a compact navigation choice, not a separate overlay. */
+.language-switch{display:inline-flex;align-items:center;gap:2px;flex-shrink:0;border:1px solid #87818f;border-radius:7px;padding:3px;line-height:1}
+.language-switch a{display:inline-flex;align-items:center;justify-content:center;min-width:32px;min-height:30px;padding:6px;font-size:12px;font-weight:700;letter-spacing:.02em;border-radius:4px}
+.language-switch a[aria-current=page]{background:#f4f4f2;color:#24262a}
+.language-switch a:hover{color:#ea5c53}.language-switch a[aria-current=page]:hover{color:#24262a}
+.language-note{font-size:14px;color:#b9c0ca;line-height:1.5;margin:16px 0 24px}
+@media(max-width:600px){.site-header{gap:12px;align-items:center}.site-header>.brand img{width:130px;height:auto}.site-header nav{gap:10px;flex-wrap:wrap;justify-content:flex-end;row-gap:8px}.site-header .nav-download{font-size:12px;padding:9px 10px}.language-switch a{min-width:28px;min-height:30px;font-size:11px}.site-header nav>a[href*="feedback"]{display:none}}
+@media(max-width:370px){.site-header>.brand img{width:108px}.site-header{padding-left:14px;padding-right:14px}.site-header nav{gap:7px}}
+.site-header .language-switch a[aria-current=page],.page header .language-switch a[aria-current=page]{color:#24262a}

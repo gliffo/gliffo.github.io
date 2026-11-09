@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Bugs, ideas and thoughts about the Gliffo Suite Beta: send us your feedback."><title>Beta feedback · Gliffo Suite</title><link rel="icon" href="/assets/gliffo-icon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css?v=5"><link rel="canonical" data-gliffo-language href="https://gliffo.github.io/en/feedback/"><link rel="alternate" data-gliffo-language hreflang="it" href="https://gliffo.github.io/feedback/"><link rel="alternate" data-gliffo-language hreflang="en" href="https://gliffo.github.io/en/feedback/"><link rel="alternate" data-gliffo-language hreflang="x-default" href="https://gliffo.github.io/feedback/"><link rel="stylesheet" href="/language.css?v=1"><script src="/i18n-runtime.js?v=1" defer></script></head><body><div class="shell"><header><a class="logo" href="/en/" aria-label="Gliffo Suite, home"><img class="logo" src="/assets/gliffo-suite.svg" alt="Gliffo Suite" width="218" height="60"></a><span class="badge">BETA TEST</span><span class="language-switch" role="group" aria-label="Language"><a href="/feedback/" lang="it" hreflang="it">IT</a><a href="/en/feedback/" lang="en" hreflang="en" aria-current="page">EN</a></span></header><main><h1>How is the Beta going?</h1><p class="intro">A problem, an idea, or something we can improve: tell us here. Every report helps us improve Gliffo Suite.</p><p class="fallback">The form is hosted by Tally. <a id="tally-direct" href="https://tally.so/r/jeZYO9">Open it directly</a> if it does not appear below.</p><p class="language-note">The feedback form is currently in Italian. You can write your feedback in English.</p><div class="form-surface"><iframe data-tally-src="https://tally.so/embed/jeZYO9?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1" width="100%" height="1354" title="Gliffo Suite · Beta feedback" referrerpolicy="strict-origin-when-cross-origin"></iframe><noscript><style>.form-surface>iframe[data-tally-src]{display:none}</style><iframe src="https://tally.so/embed/jeZYO9?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1" width="100%" height="1354" title="Gliffo Suite · Beta feedback" referrerpolicy="strict-origin-when-cross-origin"></iframe></noscript></div><p class="fallback">Having trouble submitting? Email <a href="mailto:gliffosuite@gmail.com">gliffosuite@gmail.com</a>.</p></main><footer><p>© 2026 gliffo. All rights reserved.</p><a href="/en/">Gliffo Suite</a></footer></div><script>
+(function(){
+ 'use strict';
+ var d=document,frame=d.querySelector('iframe[data-tally-src]'),direct=d.getElementById('tally-direct');
+ if(!frame||!direct){return;}
+ var query=new URLSearchParams(window.location.search),embed=new URL(frame.getAttribute('data-tally-src')),link=new URL(direct.href);
+ ['app','version','os','illustrator'].forEach(function(name){var value=query.get(name);if(value){value=value.slice(0,120);embed.searchParams.set(name,value);link.searchParams.set(name,value);}});
+ frame.setAttribute('data-tally-src',embed.href);direct.href=link.href;
+ // Keep native scrolling available until Tally supplies the complete height.
+ var observer=new MutationObserver(function(records){
+  var sized=records.some(function(record){return record.attributeName==='height'||(record.attributeName==='style'&&Number.parseFloat(frame.style.height)>0);});
+  if(sized){frame.setAttribute('scrolling','no');}
+ });
+ observer.observe(frame,{attributes:true,attributeFilter:['style','height']});
+ // Official Tally bootstrap, with native loading on SDK errors as in its snippet.
+ var w='https://tally.so/widgets/embed.js';
+ function nativeFallback(){d.querySelectorAll('iframe[data-tally-src]:not([src])').forEach(function(e){e.src=e.getAttribute('data-tally-src');});}
+ function load(){
+  try{if(typeof window.Tally!=='undefined'){window.Tally.loadEmbeds();}else{nativeFallback();}}
+  catch(_){nativeFallback();}
+ }
+ if(typeof window.Tally!=='undefined'){load();}
+ else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement('script');s.src=w;s.onload=load;s.onerror=load;d.body.appendChild(s);}
+}());
+</script></body></html>

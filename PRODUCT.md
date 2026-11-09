@@ -83,3 +83,12 @@ La sezione Dentro Illustrator usa ora una galleria manuale con otto selettori-lo
 La sagoma WebGL della g ora deriva da un campo di distanza a 16 bit in assets/gliffo-distance.png, calcolato dallo SVG originale con padding; copertura antialias analitica e normalità smussate sostituiscono le vecchie soglie alpha. Il canvas usa fino a2×DPR, con budget5,4Mpdesktop/1,8Mpmobile e riduzione adattiva della risoluzione dopo frame lenti. Test Retina: canvas2823px per viewport1440 (scala1,96) e780px per390 (2,00). Nessun benchmark su dispositivo fisico dichiarato.
 
 Direzione amplificata: g con bevel e metallo iridescente, orbita spessa con arco davanti/dietro, lente che ingrandisce/deforma la sagoma e riflessi, increspatura al pointerdown nello spazio libero, sfondo con caustiche, titolo più pesante e campitura acida inclinata. Testi e CTA rimangono HTML. Movimento ridotto statico; pausa offscreen/tab nascosta e SVG/CSS senza WebGL conservati. Verificati shader animato, risposta del puntatore, fallback, due viewport Retina senza overflow/errori e navigazione app/email preservata.
+
+
+## Versione inglese del sito
+
+La home italiana resta su `/`; `/en/`, `/en/beta/download/` e `/en/feedback/` contengono HTML inglese statico, con selettore IT/EN e metadati canonical/hreflang. `scripts/build-english.py` rigenera le pagine inglesi dal catalogo `scripts/en-copy.json`. Le immagini originali e il layout sono condivisi, senza traduzioni simulate delle schermate.
+
+`i18n-runtime.js` localizza galleria, anteprime e messaggi del modulo. Il modulo Formspree conserva endpoint, marcatore, gestione degli errori e accesso ai download tramite email, aggiungendo il solo campo language. Non invia o memorizza email nella navigazione. La preferenza di lingua, unico valore conservato in localStorage, consente al link italiano della mail esistente di aprire le istruzioni inglesi sullo stesso browser. Nessun indirizzo email viene inserito in URL o localStorage.
+
+L’estensione, le schermate, il modulo Tally e l’email di benvenuto già attiva restano in italiano; le pagine inglesi lo dichiarano. Il visitatore può scrivere feedback in inglese. Nessuna modifica a Apps Script o alle notifiche già attive; nessun invio reale durante i test. Gli installer e i loro hash rimangono invariati.
