@@ -3,13 +3,13 @@
   "channel": "Beta",
   "trialDays": 15,
   "mac": {
-    "url": "https://gliffo.github.io/downloads/Gliffo%20Suite%20Beta.dmg?v=a318d930",
+    "url": "https://gliffo.github.io/downloads/Gliffo%20Suite%20Beta.dmg?v=6da8ae0c",
     "file": "Gliffo Suite Beta.dmg",
-    "sha256": "a318d93038b6a0ca172def6f07b48e1a941e3ab3316ba8dd2271dc1baad2c9e0"
+    "sha256": "6da8ae0c1a36756e7fd29cf818374137aafd2a02550ff59fa7efb4b9d33ba18c"
   },
   "windows": {
-    "url": "https://gliffo.github.io/downloads/Gliffo%20Suite%20Beta.exe",
+    "url": "https://gliffo.github.io/downloads/Gliffo%20Suite%20Beta.exe?v=c408b926",
     "file": "Gliffo Suite Beta.exe",
-    "sha256": "27f62dcc0b569bbcf09a77ea62bf01daf733af5f8ae566476ece7fa410dc65bb"
+    "sha256": "c408b926e9b0fb3cc38296047a1a8350b295fd90d3dbf86808bced0eab24fd85"
   }
 }
