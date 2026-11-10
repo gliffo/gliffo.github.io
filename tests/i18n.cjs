@@ -9,7 +9,7 @@ for(const [it,en] of [['index.html','en/index.html'],['beta/download/index.html'
   let target=path.join(root,decodeURIComponent(match[1]));if(target.endsWith('/'))target+='index.html';assert(fs.existsSync(target),'Broken English resource '+match[1]);
  }
 }
-const en=fs.readFileSync(path.join(root,'en/index.html'),'utf8');assert(en.includes('name="language" value="en"'));assert(en.includes('GLIFFO_BETA_mgaarvej'));assert(en.includes('https://formspree.io/f/mgaarvej'));assert(en.includes('welcome email are currently in Italian'));
+const en=fs.readFileSync(path.join(root,'en/index.html'),'utf8');assert(en.includes('name="language" value="en"'));assert(en.includes('GLIFFO_BETA_mgaarvej'));assert(en.includes('https://formspree.io/f/mgaarvej'));assert(en.includes('The Suite is available in Italian and English.'));assert(en.includes('welcome email are currently in Italian'));assert(!en.includes('The app, screenshots and welcome email')); 
 assert(fs.readFileSync(path.join(root,'en/feedback/index.html'),'utf8').includes('feedback form is currently in Italian'));
 for(const file of ['landing.js','gallery.js','screenshots.js','beta-email.js'])assert(fs.readFileSync(path.join(root,file),'utf8').includes('var tr='));
-console.log('PASS: three static English routes, language metadata/switches, linked resources, provider marker, language field and clear Italian-interface notices.');
+console.log('PASS: three static English routes, language metadata/switches, linked resources, provider marker, language field and correct bilingual-interface and Italian-email/form notices.');

@@ -54,7 +54,7 @@ for relative,it,en in [('index.html','/','/en/'),('beta/download/index.html','/b
     parser=Translate();parser.feed(source);english=''.join(parser.out).replace('<html lang="it"','<html lang="en"')
     for before,after in [('/', '/en/'),('/feedback/','/en/feedback/'),('/beta/download/','/en/beta/download/')]:english=english.replace('href="'+before+'"','href="'+after+'"')
     if relative=='index.html':
-        english=english.replace('We use your email to send you access to the Beta.','We use your email to send you access to the Beta. The app, screenshots and welcome email are currently in Italian.')
+        english=english.replace('We use your email to send you access to the Beta.','We use your email to send you access to the Beta. The Suite is available in Italian and English. Screenshots and the welcome email are currently in Italian.')
     if relative=='feedback/index.html':
         english=english.replace('<div class="form-surface">','<p class="language-note">The feedback form is currently in Italian. You can write your feedback in English.</p><div class="form-surface">')
     if relative=='beta/download/index.html':

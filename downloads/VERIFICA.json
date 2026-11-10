@@ -5,16 +5,16 @@
     "start": "first-launch",
     "policy": "suite-beta-1"
   },
-  "signed_payload_sha256": "9975a04b5609ba4f230141e5d28815ef5b4782f303a95de49d5ff80922fd17f4",
-  "mac": "DMG fornito dal titolare il 2026-11-09; payload firmato identico allo ZXP ricevuto, icone originali e progresso verificati per estrazione; avvio nativo e trust Apple non verificati qui",
+  "signed_payload_sha256": "333e50cf01ac23c0b471c557944e11fe2ebb9651cc79ec60141b4dfa87e2f122",
+  "mac": "DMG fornito dal titolare il 2026-11-10; payload firmato identico allo ZXP ricevuto, icone originali e progresso verificati per estrazione; avvio nativo e trust Apple non verificati qui",
   "windows": "Compilato con NSIS dal medesimo payload firmato; tutti i file verificati; avvio nativo non collaudato qui; nessuna firma Authenticode",
   "installer_title": "Gliffo Suite Beta",
   "minimum_progress_ms": 2500,
   "sha256": {
-    "Gliffo Suite Beta.dmg": "6da8ae0c1a36756e7fd29cf818374137aafd2a02550ff59fa7efb4b9d33ba18c",
-    "Gliffo Suite Beta.exe": "c408b926e9b0fb3cc38296047a1a8350b295fd90d3dbf86808bced0eab24fd85"
+    "Gliffo Suite Beta.dmg": "3e044ba95827eb1f532d8d3697b416be2150f9f72170d0bedc12e9a17f0bfcfb",
+    "Gliffo Suite Beta.exe": "56764e38c395a834c2582cbb819cbd28b523b069a46c3cfcc3d09e779869adee"
   },
-  "windows_payload_entries_identical": 65,
+  "windows_payload_entries_identical": 76,
   "mac_readme_sha256": "e69ac46b5f10122402170a2edd5e138e37accf63ac5d462b9225e6111632cc5d",
   "certificate_sha256": "c67ecd368801a77bfa1dc1feed06452714c43728dc1bc9775fa1a0248ae445ed",
   "panel_icons": {
@@ -25,5 +25,17 @@
   "window_fix": {
     "protectedSourceMatches": true,
     "nativeIllustrator30_8Test": "pending"
+  },
+  "published_date": "2026-11-10",
+  "languages": [
+    "it",
+    "en"
+  ],
+  "localization": {
+    "protectedBrowserResourcesMatchSource": true,
+    "sourceCommit": "8c42f02fa97366a113dc10c1d00ff919abdc6b7d",
+    "default": "Illustrator appUILocale; it for Italian, en otherwise",
+    "manualOverride": "home, Lingua / Language",
+    "nativeIllustratorTest": "pending"
   }
 }

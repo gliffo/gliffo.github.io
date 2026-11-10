@@ -1,7 +1,7 @@
 GLIFFO SUITE BETA — INSTALLATION
 
 Free Beta: 15 days from the first launch. Adobe Illustrator 2024 or later.
-The app and installer interface are currently in Italian.
+The Suite interface is available in Italian and English. It follows Illustrator’s UI language; override it with “Lingua / Language” on the home panel. The installer is currently in Italian.
 Save your work and quit Illustrator before installing or uninstalling.
 
 1. Download Gliffo Suite Beta.exe from the official Gliffo website.

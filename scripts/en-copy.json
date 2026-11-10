@@ -249,5 +249,6 @@
   "Il servizio non ha confermato l’invio. Riprova più tardi.": "The service did not confirm your submission. Please try again later.",
   "Non riusciamo a confermare l’invio. Riprova tra poco: la tua email è ancora nel campo.": "We could not confirm your submission. Please try again shortly: your email is still in the field.",
   "Richiesta ricevuta! Il link ai download arriva via email entro circa 5 minuti da gliffosuite@gmail.com. Se non lo trovi, controlla Spam e scegli «Non spam». Se eri già iscritto, cerca il messaggio ricevuto in precedenza.": "Request received! Your download link should arrive within about 5 minutes from gliffosuite@gmail.com. If it is missing, check Spam and mark the message as “Not spam”. If you have already signed up, look for the email you received earlier.",
-  "La tua email serve per inviarti l’accesso alla Beta. Controlla anche Spam: se trovi il messaggio, scegli «Non spam».": "We use your email to send you access to the Beta. Check Spam too: if you find the message there, mark it as “Not spam”."
+  "La tua email serve per inviarti l’accesso alla Beta. Controlla anche Spam: se trovi il messaggio, scegli «Non spam».": "We use your email to send you access to the Beta. Check Spam too: if you find the message there, mark it as “Not spam”.",
+  "Interfaccia in italiano e inglese": "Interface in Italian and English"
 }
