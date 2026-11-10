@@ -92,3 +92,8 @@ La home italiana resta su `/`; `/en/`, `/en/beta/download/` e `/en/feedback/` co
 `i18n-runtime.js` localizza galleria, anteprime e messaggi del modulo. Il modulo Formspree conserva endpoint, marcatore, gestione degli errori e accesso ai download tramite email, aggiungendo il solo campo language. Non invia o memorizza email nella navigazione. La preferenza di lingua, unico valore conservato in localStorage, consente al link italiano della mail esistente di aprire le istruzioni inglesi sullo stesso browser. Nessun indirizzo email viene inserito in URL o localStorage.
 
 L’estensione, le schermate, il modulo Tally e l’email di benvenuto già attiva restano in italiano; le pagine inglesi lo dichiarano. Il visitatore può scrivere feedback in inglese. Nessuna modifica a Apps Script o alle notifiche già attive; nessun invio reale durante i test. Gli installer e i loro hash rimangono invariati.
+
+
+## Benvenuto in testo semplice — 10 novembre 2026
+
+Il nuovo Code.gs prepara un benvenuto testuale con un solo link ai download, mittente Elia di Gliffo e oggetto Il tuo accesso a Gliffo Suite. Non contiene htmlBody, immagini o allegati. I controlli su Formspree, l’account proprietario e il registro anti-duplicati restano invariati. Il titolare deve salvare il nuovo codice nel progetto Apps Script già attivo: la pubblicazione del sito non aggiorna il timer Google. Nessuna email reale è stata inviata da Codex e non è garantita l’uscita dallo Spam. Le due lingue del sito invitano a controllare Spam e scegliere Non spam; l’email resta italiana.

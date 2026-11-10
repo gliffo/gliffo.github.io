@@ -1,3 +1,22 @@
+# Aggiornamento del messaggio di benvenuto — 10 novembre 2026
+
+Il messaggio ora è in testo semplice, contiene un solo collegamento ai download, usa l’oggetto **Il tuo accesso a Gliffo Suite** e il nome mittente **Elia di Gliffo**. Non contiene HTML, allegati, immagini o link di tracciamento. Non garantisce il recapito in Posta in arrivo: Gmail continua a decidere la classificazione.
+
+## Se l’automazione è già attiva (caso attuale)
+
+1. Accedi con **gliffosuite@gmail.com** a https://script.google.com/home e apri il progetto Gliffo già usato per il benvenuto.
+2. Nel file **Code.gs**, sostituisci il contenuto con quello del nuovo Code.gs e salva.
+3. Non creare un nuovo progetto, non cancellare le proprietà e non ricreare gli attivatori. Il timer esistente usa il codice salvato aggiornato. Non serve Distribuisci / Nuova distribuzione per questo timer.
+4. Facoltativo: esegui **inviaProvaSoloAMe** per verificare il messaggio nella casella Gliffo. Questa funzione invia soltanto al proprietario.
+
+I controlli del mittente Formspree e del modulo, il timer, le quote, il blocco concorrente e il registro anti-duplicati sono conservati. Gli indirizzi già contattati non ricevono automaticamente una seconda email. La durata della prova del prodotto non viene modificata.
+
+**Stato:** nuovo codice preparato e testato con Google simulato, nessuna email reale inviata da Codex. Va ancora salvato nel progetto Google già attivo; pubblicare questo file sul sito non aggiorna da solo Apps Script.
+
+---
+
+Le istruzioni seguenti sono soltanto per una prima configurazione. Non ripeterle per aggiornare l’automazione già attiva.
+
 # Email di benvenuto Gliffo — attivazione gratuita
 
 L’automazione gira su Google Apps Script nell’account **gliffosuite@gmail.com**. Il sito e Formspree rimangono come sono: le notifiche ricevute in Gmail attivano un benvenuto entro circa cinque minuti. Il momento rilevato è l’iscrizione alla Beta, non il download effettivo del file.

@@ -9,7 +9,7 @@ var GLIFFO = Object.freeze({
   query: 'newer_than:30d from:(formspree.io) -in:spam -in:trash',
   download: 'https://gliffo.github.io/beta/download/',
   feedback: 'https://gliffo.github.io/feedback/',
-  subject: 'Benvenuto nella Beta di Gliffo Suite!',
+  subject: 'Il tuo accesso a Gliffo Suite',
   handler: 'inviaBenvenutiBeta',
   batchLimit: 10
 });
@@ -180,27 +180,15 @@ function chiaveIndirizzo_(address) {
 }
 
 function testoBenvenuto_() {
-  return 'Grazie per aver scelto di provare Gliffo Suite!\n\n' +
-    'Hai 15 giorni dal primo avvio per esplorare gli otto strumenti.\n\n' +
-    'Scarica la Beta per Mac o Windows:\n' + GLIFFO.download + '\n\n' +
-    'Raccontaci come sta andando o segnala un problema:\n' + GLIFFO.feedback + '\n\n' +
-    'Buon lavoro!\nIl team Gliffo\n\n' +
-    'Ricevi questa email perché hai richiesto l’accesso alla Beta di Gliffo Suite.';
-}
-
-function htmlBenvenuto_() {
-  return '<!doctype html><html lang="it"><body style="margin:0;background:#f0edef;color:#24262a;font-family:Arial,Helvetica,sans-serif">' +
-    '<table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td align="center" style="padding:32px 16px">' +
-    '<table role="presentation" width="560" cellpadding="0" cellspacing="0" style="width:100%;max-width:560px;background:#fff;border-radius:16px">' +
-    '<tr><td style="padding:26px 32px;background:#24262a;color:#f4f4f2;border-radius:16px 16px 0 0;font-size:28px;font-weight:bold">gliffo<span style="color:#ea5c53">.</span></td></tr>' +
-    '<tr><td style="padding:32px;font-size:16px;line-height:1.6"><h1 style="font-size:28px;line-height:1.15;margin:0 0 22px">Benvenuto nella Beta!</h1>' +
-    '<p>Grazie per aver scelto di provare Gliffo Suite!</p><p>Hai <strong>15 giorni dal primo avvio</strong> per esplorare gli otto strumenti.</p>' +
-    '<p style="margin:28px 0"><a href="' + GLIFFO.download + '" style="display:inline-block;padding:14px 22px;background:#24262a;color:#fff;text-decoration:none;border-radius:8px;font-weight:bold">Scarica Gliffo Suite Beta</a></p>' +
-    '<p>Raccontaci come sta andando o segnala un problema dal <a href="' + GLIFFO.feedback + '" style="color:#8f302b;text-decoration:underline">modulo feedback</a>.</p>' +
-    '<p>Buon lavoro!<br>Il team Gliffo</p><p style="margin-top:28px;font-size:12px;color:#60646b">Ricevi questa email perché hai richiesto l’accesso alla Beta di Gliffo Suite.</p>' +
-    '</td></tr></table></td></tr></table></body></html>';
+  return 'Ciao,\n\n' +
+    'hai richiesto l’accesso alla beta di Gliffo Suite per Adobe Illustrator.\n\n' +
+    'Puoi scaricarla qui:\n' + GLIFFO.download + '\n\n' +
+    'La prova dura 15 giorni dal primo avvio.\n\n' +
+    'Se hai bisogno di aiuto, rispondi a questa email.\n\n' +
+    'Grazie,\nElia\nGliffo\n\n' +
+    'Ricevi questo messaggio perché hai richiesto l’accesso alla beta dal sito Gliffo.';
 }
 
 function spedisceBenvenuto_(recipient) {
-  MailApp.sendEmail({ to:recipient, subject:GLIFFO.subject, body:testoBenvenuto_(), htmlBody:htmlBenvenuto_(), name:'Gliffo Suite', replyTo:GLIFFO.mailbox });
+  MailApp.sendEmail({ to:recipient, subject:GLIFFO.subject, body:testoBenvenuto_(), name:'Elia di Gliffo', replyTo:GLIFFO.mailbox });
 }

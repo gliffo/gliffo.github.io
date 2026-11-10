@@ -38,7 +38,7 @@ def finish(s,it,en,language):
     tags='<link rel="canonical" data-gliffo-language href="https://gliffo.github.io'+(en if language=='en' else it)+'">'+''.join('<link rel="alternate" data-gliffo-language hreflang="'+lang+'" href="https://gliffo.github.io'+path+'">' for lang,path in [('it',it),('en',en),('x-default',it)])
     s=s.replace('</head>',tags+'<link rel="stylesheet" href="/language.css?v=1"></head>')
     # All existing scripts are deferred; language helpers run before them.
-    s=s.replace('</head>','<script src="/i18n-runtime.js?v=1" defer></script></head>')
+    s=s.replace('</head>','<script src="/i18n-runtime.js?v=2" defer></script></head>')
     if 'class="beta-native-form"' in s or 'beta-native-form' in s:
         s=re.sub(r'<input[^>]+name="language"[^>]*>','',s)
         s=s.replace('name="gliffo_beta_source"','name="gliffo_beta_source"',1)

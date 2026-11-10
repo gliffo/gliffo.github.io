@@ -247,6 +247,7 @@
   "Invio della tua email in corso…": "Submitting your email…",
   "Il servizio ha raggiunto un limite temporaneo. Riprova più tardi.": "The service has reached a temporary limit. Please try again later.",
   "Il servizio non ha confermato l’invio. Riprova più tardi.": "The service did not confirm your submission. Please try again later.",
-  "Richiesta ricevuta! Controlla la tua email: il link ai download può impiegare circa 5 minuti. Se hai già richiesto la Beta, cerca il messaggio «Benvenuto nella Beta di Gliffo Suite!». Controlla anche Spam.": "Request received! Check your email: the download link may take around 5 minutes to arrive. The welcome email is currently in Italian, with the subject “Benvenuto nella Beta di Gliffo Suite!”. If you have already requested access, look for that email. Check your Spam folder too.",
-  "Non riusciamo a confermare l’invio. Riprova tra poco: la tua email è ancora nel campo.": "We could not confirm your submission. Please try again shortly: your email is still in the field."
+  "Non riusciamo a confermare l’invio. Riprova tra poco: la tua email è ancora nel campo.": "We could not confirm your submission. Please try again shortly: your email is still in the field.",
+  "Richiesta ricevuta! Il link ai download arriva via email entro circa 5 minuti da gliffosuite@gmail.com. Se non lo trovi, controlla Spam e scegli «Non spam». Se eri già iscritto, cerca il messaggio ricevuto in precedenza.": "Request received! Your download link should arrive within about 5 minutes from gliffosuite@gmail.com. If it is missing, check Spam and mark the message as “Not spam”. If you have already signed up, look for the email you received earlier.",
+  "La tua email serve per inviarti l’accesso alla Beta. Controlla anche Spam: se trovi il messaggio, scegli «Non spam».": "We use your email to send you access to the Beta. Check Spam too: if you find the message there, mark it as “Not spam”."
 }
